@@ -1,2 +1,37 @@
 {
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Mean temp of Australia",
+    "width": 800,
+    "height": 400,
+    "projection": {"type": "equirectangular"},
+    "layer": [
+        {
+            "data": {
+                "url": "australia.topojson",
+                "format": {"type": "topojson", "feature": "ne_50m_admin_0_countries"}
+            },
+            "mark": {"type": "geoshape", "fill": "white", "stroke":"lightgray"}
+        },
+        {
+            "data": {
+                "url":"temp-data.csv"
+            },
+            "mark": {"type": "circle", "size": 200},
+            "encoding": {
+                "longitude": {"field": "LON", "type":"quantitative"},
+                "latitude": {"field": "LAT", "type":"quantitative"},
+                "color": {
+                    "field": "Annual",
+                    "type": "quantitative",
+                    "title": "temp",
+                    "scale": {"scheme": "blueorange"}
+                },
+                "tooltip": [
+                    {"field": "STATION_NAME"}
+                ]
+            }
+        }
+    ]
+
+    
   }
