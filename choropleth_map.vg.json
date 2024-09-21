@@ -7,29 +7,29 @@
     "layer": [
         {
             "data": {
-                "url": "australia.topojson",
-                "format": {"type": "topojson", "feature": "ne_50m_admin_0_countries"}
+                "url":"fixed_data.csv"
             },
-            "mark": {"type": "geoshape", "fill": "white", "stroke":"lightgray"}
+            "mark": {"type": "rect", "width":23, "height": 15},
+            "encoding": {
+                "longitude": {"field": "lon", "type":"quantitative"},
+                "latitude": {"field": "lat", "type":"quantitative"},
+                "color": {
+                    "field": "temp-change",
+                    "type": "quantitative",
+                    "title": "temp",
+                    "scale": {"scheme": "blueorange", "domainMid":0}
+                },
+                "tooltip": [
+                    {"field": "temp-change"}
+                ]
+            }
         },
         {
             "data": {
-                "url":"temp-data.csv"
+                "url": "australia.topojson",
+                "format": {"type": "topojson", "feature": "ne_50m_admin_0_countries"}
             },
-            "mark": {"type": "circle", "size": 200},
-            "encoding": {
-                "longitude": {"field": "LON", "type":"quantitative"},
-                "latitude": {"field": "LAT", "type":"quantitative"},
-                "color": {
-                    "field": "Annual",
-                    "type": "quantitative",
-                    "title": "temp",
-                    "scale": {"scheme": "blueorange"}
-                },
-                "tooltip": [
-                    {"field": "STATION_NAME"}
-                ]
-            }
+            "mark": {"type": "geoshape", "fill":null, "stroke":"black"}
         }
     ]
 
