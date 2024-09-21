@@ -1,26 +1,47 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Mean temp of Australia",
+    "title": {
+        "text": "Increase in Mean Temperature",
+        "subtitle": "Predicted change in mean temperature from 1986-2005 average (baseline) to 2015-2034 average. Source: CSIRO.",
+        "font": "arial black",
+        "fontSize": 30,
+        "subtitleFont": "serif",
+        "subtitleFontSize": 16
+    },
     "width": 800,
-    "height": 400,
+    "height": 650,
     "projection": {"type": "equirectangular"},
     "layer": [
         {
             "data": {
                 "url":"fixed_data.csv"
             },
-            "mark": {"type": "rect", "width":1.5, "height": 1},
+            "mark": {"type": "rect", "width":2, "height": 1.5},
             "encoding": {
                 "longitude": {"field": "lon", "type":"quantitative"},
                 "latitude": {"field": "lat", "type":"quantitative"},
                 "color": {
                     "field": "temp-change",
                     "type": "quantitative",
-                    "title": "temp",
-                    "scale": {"scheme": "blueorange"}
+                    "title": "Increase in mean temperature (°C)",
+                    "scale": {"scheme": "goldorange"},
+                    "legend": {
+                        "orient": "bottom", 
+                        "titleAnchor":"middle",
+                        "gradientLength": 800,
+                        "gradientThickness": 30,
+                        "tickCount": 8,
+                        "titleFontSize": 16,
+                        "titleFont": "arial",
+                        "titleLimit": 800
+                    }
                 },
                 "tooltip": [
-                    {"field": "temp-change"}
+                    {
+                        "field": "temp-change",
+                        "format": ".2f",
+                        "title": "Increase (°C)"
+                    }
                 ]
             }
         },
