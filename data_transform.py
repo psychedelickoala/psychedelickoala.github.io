@@ -5,35 +5,40 @@ from scipy.interpolate import interpn
 readfile = "tas_annual.csv"
 writefile = 'fixed_data.csv'
 australia_only = True
-precision = 1
-lon_ratio = 2 if not australia_only else int((155-111)/(45-11))
+precision = 20
+#lon_ratio = 2 if not australia_only else int((155-111)/(45-11))
 
 array = np.loadtxt(readfile, delimiter=",")
 
 lats, lons = array.shape
 
-latitudes = np.linspace(start=-90, stop=90, num=lats*precision, endpoint=True)
-longitudes = np.linspace(start=0, stop=360, num=(lons*precision*lon_ratio), endpoint=False)
+latitudes = np.linspace(start=-90, stop=90, num=lats, endpoint=True)
+longitudes = np.linspace(start=0, stop=360, num=lons, endpoint=True)
 
 points = (latitudes, longitudes)
 values = array
-point = np.array([[[0.01, 15.67], [5.89, 13.21]], [[7.89, 15.67], [0.00, 13.21]]])
-
-interpolation = interpn(points, values, point)
-print(interpolation)
 
 
-"""
+new_lats = np.linspace(start=-90, stop=90, num=lats*precision, endpoint=True)
+new_lons = np.linspace(start=0, stop=360, num=lons*precision, endpoint=True)
+
+coords = np.array(np.meshgrid(new_lats,new_lons)).transpose([1,2,0])
+#print(coords)
+
+interpolation = interpn(points, values, coords)
+interpolation = interpolation.transpose([1, 0])
+
+
 
 with open(writefile, 'w', newline='') as csvfile:
     writer = csv.writer(csvfile, delimiter=",")
     writer.writerow(["lat", "lon", "temp-change"])
 
-    for i in range(len(latitudes)):
-        for j in range(len(longitudes)):
-            if not australia_only or (-45 <= latitudes[i] <= -11 and 111 <= longitudes[j] <= 155):
-                writer.writerow([latitudes[i], longitudes[j], get_value(i, j)])
-"""
+    for i in range(len(new_lats)):
+        for j in range(len(new_lons)):
+            if not australia_only or (-45 <= new_lats[i] <= -11 and 111 <= new_lons[j] <= 155):
+                writer.writerow([new_lats[i], new_lons[j], interpolation[i, j]])
+
 
 # cemetery
 """
