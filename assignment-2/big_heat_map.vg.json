@@ -42,7 +42,11 @@
                     "field": "temp-change",
                     "type": "quantitative",
                     "title": "Increase in mean temperature (°C)",
-                    "scale": {"scheme": "goldorange"},
+                    "scale": {
+                        "scheme": "goldorange",
+                        "domainMin": 0,
+                        "domainMax": 3
+                    },
                     "legend": {
                         "orient": "bottom", 
                         "titleAnchor":"middle",
