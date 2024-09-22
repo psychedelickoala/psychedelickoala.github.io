@@ -48,10 +48,20 @@
         {
             "data": {
                 "url": "australia.topojson",
+                "format": {"type": "topojson", "feature": "ne_110m_graticules_10"}
+
+            },
+            "mark": {"type": "geoshape", "fill":null, "stroke":"lightgray"}
+        },
+        {
+            "data": {
+                "url": "australia.topojson",
                 "format": {"type": "topojson", "feature": "ne_50m_admin_0_countries"}
+
             },
             "mark": {"type": "geoshape", "fill":null, "stroke":"black"}
         }
+
     ]
 
     
