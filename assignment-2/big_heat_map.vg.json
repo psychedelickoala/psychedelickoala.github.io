@@ -10,12 +10,30 @@
     },
     "width": 800,
     "height": 650,
+    "params": [
+        {
+            "name": "yearselection", 
+            "value": 2020,
+            "bind": {
+                "input": "range",
+                "min": 2015,
+                "max": 2080,
+                "step": 5
+            }
+        }
+    ],
     "projection": {"type": "equirectangular"},
     "layer": [
         {
             "data": {
                 "url":"temp-data/processed_tas_annual.csv"
             },
+
+            "transform": [
+                {
+                    "filter": "datum.year_start==yearselection"
+                }
+            ],
             "mark": {"type": "rect", "width":5, "height": 6},
             "encoding": {
                 "longitude": {"field": "lon", "type":"quantitative"},
@@ -48,21 +66,22 @@
         {
             "data": {
                 "url": "shape-data/big-map.topojson",
-                "format": {"type": "topojson", "feature": "ne_50m_admin_1_states_provinces"}
-
-            },
-            "mark": {"type": "geoshape", "fill":null, "stroke":"black"}
-        },
-        {
-            "data": {
-                "url": "shape-data/big-map.topojson",
                 "format": {"type": "topojson", "feature": "ne_50m_graticules_5"}
 
             },
             "mark": {"type": "geoshape", "fill":null, "stroke":"lightgray"}
+        },
+        {
+            "data": {
+                "url": "shape-data/big-map.topojson",
+                "format": {"type": "topojson", "feature": "ne_50m_admin_1_states_provinces"}
+
+            },
+            "mark": {"type": "geoshape", "fill":null, "stroke":"black"}
         }
+
 
     ]
 
     
-  }
+}
