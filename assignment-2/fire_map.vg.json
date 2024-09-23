@@ -1,0 +1,75 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Fire Danger Rating",
+        "subtitle": "uh oh Source: CSIRO.",
+        "font": "arial black",
+        "fontSize": 30,
+        "subtitleFont": "serif",
+        "subtitleFontSize": 16
+    },
+    "width": 800,
+    "height": 650,
+    "params": [
+        {
+            "name": "yearselection", 
+            "value": 2030,
+            "bind": {
+                "input": "range",
+                "min": 2030,
+                "max": 2090,
+                "step": 20
+            }
+        }
+    ],
+    "projection": {"type": "equirectangular"},
+    "layer": [
+        {
+            "data": {
+                "url":"fire-danger2.csv"
+            },
+            "transform": [
+                {"filter": "datum.Year == yearselection"},
+                {"filter": "datum.Experiment == 'rcp45' && datum.Model == 'CESM1-CAM5'"}
+            ],
+
+
+            "mark": "circle",
+            "encoding": {
+                "longitude": {"field": "Lon", "type":"quantitative"},
+                "latitude": {"field": "Lat", "type":"quantitative"},
+                "size": {
+                    "field": "DPY_GE_HI",
+                    "type": "quantitative"
+                },
+                "tooltip": [
+                    {
+                        "field": "DPY_GE_HI",
+                        "format": ".2f",
+                        "title": "days per year high"
+                    }
+                ]
+            }
+        },
+        {
+            "data": {
+                "url": "shape-data/big-map.topojson",
+                "format": {"type": "topojson", "feature": "ne_50m_graticules_5"}
+
+            },
+            "mark": {"type": "geoshape", "fill":null, "stroke":"lightgray"}
+        },
+        {
+            "data": {
+                "url": "shape-data/big-map.topojson",
+                "format": {"type": "topojson", "feature": "ne_50m_admin_1_states_provinces"}
+
+            },
+            "mark": {"type": "geoshape", "fill":null, "stroke":"black"}
+        }
+
+
+    ]
+
+    
+}
