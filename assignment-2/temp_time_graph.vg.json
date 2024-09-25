@@ -9,7 +9,6 @@
         "subtitleFontSize": 16
     },
     "width": 800,
-    "height": 650,
 
     "data": {
         "url": "max-temp.csv",
@@ -17,6 +16,39 @@
         "type": "csv"
         }
     },
+    "params": [
+        {
+          "name": "selectedMonth",
+          "value": null,
+          "bind": {
+            "input": "select",
+            "options": [null, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "labels": ["All", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+          }
+        },
+        {
+            "name": "temperatureType",
+            "value": "Mean_Max_Temp", 
+            "bind": {
+              "input": "radio",
+              "options": ["Mean_Max_Temp", "Mean_Min_Temp"],
+              "name": "Temperature Type"
+            }
+          }
+      ],
+    "transform": [
+        {
+          "filter": "!selectedMonth || datum.Month == selectedMonth"
+        },
+        {
+            "fold": ["Mean_Max_Temp", "Mean_Min_Temp"]
+        },
+        {
+            "filter": "datum.key == temperatureType"
+        }
+    ],
+    "height": {"step": 40},
     "mark": "rect",
     "encoding": {
         "y": {
@@ -31,14 +63,16 @@
         "field": "Year",
         "type": "ordinal",
         "axis": {
-            "title": "Year"
+            "title": "Year",
+            "labelExpr": "datum.value % 5 == 0 ? datum.label : ''",
+            "labelAngle": 0
         }
         },
         "color": {
-        "field": "Mean_Min_Temp",
+        "field": "value",
         "type": "quantitative",
         "scale": {
-            "scheme": "viridis"
+            "scheme": "browns"
         },
         "legend": {
             "title": "Temperature (°C)"
@@ -47,6 +81,9 @@
         "tooltip": [
             {
                 "field": "Mean_Min_Temp", "format": ".1f"
+            },
+            {
+                "field": "Mean_Max_Temp", "format": ".1f"
             },
             {"field": "Month"},
             {"field": "Year"}
