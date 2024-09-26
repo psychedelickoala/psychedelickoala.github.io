@@ -1,0 +1,77 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "emissions",
+        "subtitle": "Predicted change in mean temperature from 1986-2005 average (baseline) to 2015-2034 average. Source: CSIRO.",
+        "font": "arial black",
+        "fontSize": 30,
+        "subtitleFont": "serif",
+        "subtitleFontSize": 16
+    },
+    "width": 800,
+    "height": 400,
+    "data": {
+        "url": "co-emissions-per-capita.csv",
+        "format": {
+        "type": "csv"
+        }
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "Entity",
+          "oneOf": ["Australia", "China", "United States", "World", "European Union", "India", "Africa"]
+        }
+      }
+    ],
+    "selection": {
+      "highlight": {
+        "type": "multi",
+        "fields": ["Entity"],
+        "bind": "legend",
+        "init": {"Entity": "Australia"}
+      }
+    },
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {"title": "Year", "tickCount": 8}
+      },
+      "y": {
+        "field": "Emissions",
+        "type": "quantitative",
+        "axis": {"title": "CO2 Emissions per Capita", "tickCount": 6}
+      },
+      "color": {
+        "field": "Entity",
+        "legend": {"title": "Country/Region"},
+        "scale": {
+          "domain": ["Australia", "China", "United States", "World", "European Union", "India", "Africa"],
+          "range": [
+            "gray", "gray", "gray", "gray", "gray", "gray", "gray"
+          ]
+        },
+        "condition": {
+          "selection": "highlight",
+          "value": "red"
+        }
+      },
+      "opacity": {
+        "condition": {
+          "selection": "highlight",
+          "value": 1
+        },
+        "value": 0.2
+      },
+      "tooltip": [
+        {"field": "Year", "type": "temporal", "formatType": "year"},
+        {"field": "Entity"},
+        {"field": "Emissions", "format": ".2f"}
+      ]
+    }
+
+    
+}
+      
