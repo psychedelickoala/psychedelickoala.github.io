@@ -7,17 +7,48 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
   
   <!-- import CSS -->
-  <link rel="stylesheet" type="css" href="styles.css" media="all">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css" media="all">
+  <title>Who up on they title</title>
 
 </head>
 <body>
-  
+  <div class="pure-g">
+    <div class="pure-u-1">
+      <h1>YO WHAT IS UP MY DUDES</h1>
+    </div>
+  </div>
+
+
+  <div class="pure-g">
+    <div class="pure-u-2-3">
+      <div id="emissions_line", class="graph"></div>
+    </div>
+    <div class="pure-u-1-3">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu sem massa. Curabitur eu orci vitae quam finibus accumsan. Fusce et nulla ac ipsum consequat posuere commodo eu metus. Vestibulum bibendum elementum quam, nec sagittis nisl convallis sed. Maecenas vulputate sapien blandit felis volutpat, id hendrerit augue rutrum. Aliquam ullamcorper felis massa, eu pellentesque urna blandit id. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean rutrum metus id erat sollicitudin aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu velit nec mi luctus molestie at non turpis. Proin vitae iaculis tellus. Sed ipsum nulla, aliquam et dignissim in, malesuada ac metus.
+
+        Proin et facilisis nulla. Morbi non arcu sit amet sem aliquet molestie. Vestibulum nec nulla finibus, dictum sem ut, egestas ligula. Vestibulum lectus metus, tristique non dolor a, sollicitudin vehicula risus. Aenean at purus pharetra, congue orci sed, efficitur augue. Praesent sed lobortis enim. Proin pharetra facilisis dolor at ornare. Proin fringilla vulputate dui, vitae tempus dui gravida hendrerit. Nunc non porttitor ante. Maecenas eget tellus vitae dolor efficitur ultrices.
+        
+        Mauris tincidunt mollis ligula, id viverra risus pharetra non. Interdum et malesuada fames ac ante ipsum primis in faucibus. In in imperdiet nisi, eget placerat leo. Vestibulum ornare risus consequat quam hendrerit, eu varius risus aliquet. Suspendisse vel nunc pulvinar, hendrerit dui laoreet, efficitur enim. Fusce ultricies, arcu sit amet congue aliquam, augue tellus interdum lorem, non sollicitudin orci leo nec lorem. Proin elementum eros quis tincidunt elementum. Sed vitae ante lectus. Donec arcu turpis, varius et sem a, tempus mollis nisl.        
+      </p>
+    </div>
+  </div>
+
+  <div id="min_max_temp"></div>
 <div id="big_heat_map"></div>
+<div id="fire_map"></div>
+<div id="rainfall_bar"></div>
+
 
 <script type="text/javascript">
-  var spec2 = "big_heat_map.vg.json";
-  vegaEmbed('#big_heat_map', spec2).then(function(result) {}).catch(console.error);
+  vegaEmbed('#big_heat_map', "big_heat_map.vg.json").then(function(result) {}).catch(console.error);
+  vegaEmbed('#emissions_line', "emissions.vg.json").then(function(result) {}).catch(console.error);
+  vegaEmbed('#fire_map', "fire_map.vg.json").then(function(result) {}).catch(console.error);
+  vegaEmbed('#min_max_temp', "temp_graph.vg.json").then(function(result) {}).catch(console.error);
+  vegaEmbed('#rainfall_bar', "rainfall.vg.json").then(function(result) {}).catch(console.error);
 </script>
 
 </body>

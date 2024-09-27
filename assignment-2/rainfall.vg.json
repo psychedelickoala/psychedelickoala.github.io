@@ -8,7 +8,8 @@
         "subtitleFont": "serif",
         "subtitleFontSize": 16
     },
-    "width": 800,
+    "width": 500,
+    "height": 300,
 
     "data": {
         "url": "rainfall.csv",
@@ -43,7 +44,6 @@
             "groupby": ["Year"]
         }
     ],
-    "height": 400,
     "layer": [
       {
         "mark": {"type": "rect", "color": "brown"},

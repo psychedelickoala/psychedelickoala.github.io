@@ -8,7 +8,7 @@
         "subtitleFont": "serif",
         "subtitleFontSize": 16
     },
-    "width": 800,
+    "width": 700,
     "height": 400,
     "data": {
         "url": "co-emissions-per-capita.csv",
