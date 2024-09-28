@@ -1,16 +1,21 @@
 .pure-g{
 	margin: 10px;
+	background-color: darkred;
 }
 
-.h1{
+.my-heading{
 	text-align: center;
+	color: beige;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .graph{
 	padding: 10px;
 }
 
-.p{
-	color: blueviolet;
-	padding: 100px;
+.my-text{
+	color: white;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	padding: 10px;
+	text-align: justify;
 }
