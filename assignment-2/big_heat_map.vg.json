@@ -8,8 +8,8 @@
         "subtitleFont": "serif",
         "subtitleFontSize": 16
     },
-    "width": 800,
-    "height": 650,
+    "width": 1200,
+    "height": 900,
     "params": [
         {
             "name": "yearselection", 
@@ -34,7 +34,7 @@
                     "filter": "datum.year_start==yearselection"
                 }
             ],
-            "mark": {"type": "rect", "width":5, "height": 6},
+            "mark": {"type": "rect", "width":7, "height": 8},
             "encoding": {
                 "longitude": {"field": "lon", "type":"quantitative"},
                 "latitude": {"field": "lat", "type":"quantitative"},

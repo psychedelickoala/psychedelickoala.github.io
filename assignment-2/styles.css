@@ -6,16 +6,24 @@
 .my-heading{
 	text-align: center;
 	color: beige;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-family: Bona Nova SC;
+	font-size: 50px;
+
 }
 
 .graph{
-	padding: 10px;
+	margin: 10px;
+	background-color: white;
+}
+
+.container {
+	column-width: 500px;
 }
 
 .my-text{
 	color: white;
-	font-family:Georgia, 'Times New Roman', Times, serif;
-	padding: 10px;
+	font-family:Libre Baskerville;
+	margin: 10px;
 	text-align: justify;
+	font-size: 16px;
 }

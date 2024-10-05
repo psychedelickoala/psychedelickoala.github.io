@@ -1,0 +1,161 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Fire Danger Rating",
+        "subtitle": "uh oh Source: CSIRO.",
+        "font": "arial black",
+        "fontSize": 30,
+        "subtitleFont": "serif",
+        "subtitleFontSize": 16
+    },
+    "width": 1000,
+    "height": 650,
+    "params": [
+        {
+            "name": "yearselection", 
+            "value": 2030,
+            "bind": {
+                "input": "range",
+                "min": 2030,
+                "max": 2090,
+                "step": 20
+            }
+        }
+    ],
+    "projection": {"type": "equirectangular"},
+    "layer": [
+
+        {
+            "data": {
+                "url": "shape-data/big-map.topojson",
+                "format": {"type": "topojson", "feature": "ne_50m_graticules_5"}
+
+            },
+            "mark": {"type": "geoshape", "fill":null, "stroke":"lightgray"}
+        },
+        {
+            "data": {
+                "url": "shape-data/big-map.topojson",
+                "format": {"type": "topojson", "feature": "ne_50m_admin_1_states_provinces"}
+
+            },
+            "mark": {"type": "geoshape", "fill":"lightgray", "stroke":"white"}
+        },
+        {
+            "data": {
+                "url":"fire-danger2.csv"
+            },
+            "transform": [
+                {"filter": "datum.Year == yearselection"},
+                {"filter": "datum.Experiment == 'rcp45' && datum.Model == 'CESM1-CAM5'"}
+            ],
+
+            
+            "mark": {"type": "circle", "color": "yellow", "opacity": 1},
+            "encoding": {
+                "longitude": {"field": "Lon", "type":"quantitative"},
+                "latitude": {"field": "Lat", "type":"quantitative"},
+                "size": {
+                    "field": "DPY_GE_HI",
+                    "type": "quantitative",
+                    "scale": {
+                        "domainMin": 0,
+                        "domainMax": 365,
+                        "rangeMin": 0,
+                        "rangeMax": 6000
+                    },
+                    "legend": {
+                        "title": "Days per Year"
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "DPY_HI",
+                        "format": ".0f",
+                        "title": "HIGH"
+                    },
+                    {
+                        "field": "DPY_VH",
+                        "format": ".0f",
+                        "title": "VERY HIGH"
+                    },
+                    {
+                        "field": "DPY_SEV",
+                        "format": ".0f",
+                        "title": "SEVERE"
+                    },
+                    {
+                        "field": "DPY_EXT",
+                        "format": ".0f",
+                        "title": "EXTREME"
+                    }
+                ]
+            }
+        },
+
+        {
+            "data": {
+                "url":"fire-danger2.csv"
+            },
+            "transform": [
+                {"filter": "datum.Year == yearselection"},
+                {"filter": "datum.Experiment == 'rcp45' && datum.Model == 'CESM1-CAM5'"}
+            ],
+
+            
+            "mark": {"type": "circle", "color": "orange", "opacity": 1},
+            "encoding": {
+                "longitude": {"field": "Lon", "type":"quantitative"},
+                "latitude": {"field": "Lat", "type":"quantitative"},
+                "size": {
+                    "field": "DPY_GE_VH",
+                    "type": "quantitative",
+                    "scale": {
+                        "domainMin": 0,
+                        "domainMax": 365,
+                        "rangeMin": 0,
+                        "rangeMax": 6000
+                    }
+                }
+            }
+        },
+        {
+            "data": {
+                "url":"fire-danger2.csv"
+            },
+            "transform": [
+                {"filter": "datum.Year == yearselection"},
+                {"filter": "datum.Experiment == 'rcp45' && datum.Model == 'CESM1-CAM5'"}
+            ],
+
+            
+            "mark": {"type": "circle", "opacity": 1},
+            "encoding": {
+                "longitude": {"field": "Lon", "type":"quantitative"},
+                "latitude": {"field": "Lat", "type":"quantitative"},
+                "size": {
+                    "field": "DPY_GE_SEV",
+                    "type": "quantitative",
+                    "scale": {
+                        "domainMin": 0,
+                        "domainMax": 365,
+                        "rangeMin": 0,
+                        "rangeMax": 6000
+                    }
+                },
+                "color": {
+                    "value": "red",
+                    "legend": {
+                        "title": "hello",
+                        "values":[1, 2, 3]
+                    }
+
+                }
+            }
+        }
+
+
+    ]
+
+    
+}

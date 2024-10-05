@@ -8,7 +8,7 @@
         "subtitleFont": "serif",
         "subtitleFontSize": 16
     },
-    "width": 750,
+    "width": 1000,
     "height": 650,
     "params": [
         {
@@ -47,101 +47,53 @@
             },
             "transform": [
                 {"filter": "datum.Year == yearselection"},
-                {"filter": "datum.Experiment == 'rcp45' && datum.Model == 'CESM1-CAM5'"}
+                {"filter": "datum.Experiment == 'rcp45' && datum.Model == 'CESM1-CAM5'"},
+                {"fold": ["High", "Very High", "Severe", "Extreme"], "as": ["Severity", "DPY"]}
             ],
 
             
-            "mark": {"type": "circle", "color": "yellow", "opacity": 1},
+            "mark": {"type": "circle", "opacity": 1},
             "encoding": {
                 "longitude": {"field": "Lon", "type":"quantitative"},
                 "latitude": {"field": "Lat", "type":"quantitative"},
                 "size": {
-                    "field": "DPY_GE_HI",
+                    "field": "DPY",
                     "type": "quantitative",
                     "scale": {
                         "domainMin": 0,
                         "domainMax": 365,
                         "rangeMin": 0,
                         "rangeMax": 6000
+                    },
+                    "legend": {
+                        "title": "Days per Year"
+                    }
+                },
+                "color": {
+                    "field": "Severity",
+                    "type": "ordinal",
+                    "scale": {
+                        "domain": ["High", "Very High", "Severe", "Extreme"],
+                        "range": ["yellow", "orange", "red", "darkred"]
                     }
                 },
                 "tooltip": [
                     {
-                        "field": "DPY_HI",
-                        "format": ".0f",
-                        "title": "HIGH"
+                        "field": "Severity",
+                        "title": "Rating"
                     },
                     {
-                        "field": "DPY_VH",
+                        "field": "DPY",
                         "format": ".0f",
-                        "title": "VERY HIGH"
-                    },
-                    {
-                        "field": "DPY_SEV",
-                        "format": ".0f",
-                        "title": "SEVERE"
-                    },
-                    {
-                        "field": "DPY_EXT",
-                        "format": ".0f",
-                        "title": "EXTREME"
+                        "title": "Days at or above rating"
                     }
+
                 ]
             }
-        },
-
-        {
-            "data": {
-                "url":"fire-danger2.csv"
-            },
-            "transform": [
-                {"filter": "datum.Year == yearselection"},
-                {"filter": "datum.Experiment == 'rcp45' && datum.Model == 'CESM1-CAM5'"}
-            ],
-
-            
-            "mark": {"type": "circle", "color": "orange", "opacity": 1},
-            "encoding": {
-                "longitude": {"field": "Lon", "type":"quantitative"},
-                "latitude": {"field": "Lat", "type":"quantitative"},
-                "size": {
-                    "field": "DPY_GE_VH",
-                    "type": "quantitative",
-                    "scale": {
-                        "domainMin": 0,
-                        "domainMax": 365,
-                        "rangeMin": 0,
-                        "rangeMax": 6000
-                    }
-                }
-            }
-        },
-        {
-            "data": {
-                "url":"fire-danger2.csv"
-            },
-            "transform": [
-                {"filter": "datum.Year == yearselection"},
-                {"filter": "datum.Experiment == 'rcp45' && datum.Model == 'CESM1-CAM5'"}
-            ],
-
-            
-            "mark": {"type": "circle", "color": "red", "opacity": 1},
-            "encoding": {
-                "longitude": {"field": "Lon", "type":"quantitative"},
-                "latitude": {"field": "Lat", "type":"quantitative"},
-                "size": {
-                    "field": "DPY_GE_SEV",
-                    "type": "quantitative",
-                    "scale": {
-                        "domainMin": 0,
-                        "domainMax": 365,
-                        "rangeMin": 0,
-                        "rangeMax": 6000
-                    }
-                }
-            }
         }
+
+
+
 
 
     ]

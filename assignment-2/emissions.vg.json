@@ -1,21 +1,25 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "emissions",
-        "subtitle": "Predicted change in mean temperature from 1986-2005 average (baseline) to 2015-2034 average. Source: CSIRO.",
-        "font": "arial black",
-        "fontSize": 30,
-        "subtitleFont": "serif",
+        "text": "Carbon Emissions of Countries over Time",
+        "subtitle": "CO2 emissions per capita for various countries/regions, from 1820 to 2022. Source: Our World in Data.",
+        "fontSize": 20,
         "subtitleFontSize": 16
     },
-    "width": 750,
-    "height": 400,
+
+
+    "width": 1000,
+    "height": 300,
+    "config": {
+      "font": "Libre Baskerville"
+    },
     "data": {
         "url": "co-emissions-per-capita.csv",
         "format": {
         "type": "csv"
         }
     },
+
     "transform": [
       {
         "filter": {
@@ -24,39 +28,44 @@
         }
       }
     ],
-    "selection": {
-      "highlight": {
-        "type": "multi",
-        "fields": ["Entity"],
-        "bind": "legend",
-        "init": {"Entity": "Australia"}
-      }
-    },
-    "mark": "line",
-    "encoding": {
-      "x": {
-        "field": "Year",
-        "type": "temporal",
-        "axis": {"title": "Year", "tickCount": 8}
+
+    "layer": [
+
+    {
+      "selection": {
+        "highlight": {
+          "type": "multi",
+          "fields": ["Entity"],
+          "bind": "legend",
+          "init": {"Entity": "Australia"}
+        }
       },
+      "mark": "line",
+
+      "encoding" : {
+      
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "axis": {"title": "Year", "tickCount": 8}
+        },
       "y": {
         "field": "Emissions",
         "type": "quantitative",
-        "axis": {"title": "CO2 Emissions per Capita", "tickCount": 6}
+        "axis": {"title": "CO2 Emissions (tonnes per person)", "tickCount": 6}
       },
       "color": {
         "field": "Entity",
         "legend": {"title": "Country/Region"},
         "scale": {
           "domain": ["Australia", "China", "United States", "World", "European Union", "India", "Africa"],
-          "range": [
-            "gray", "gray", "gray", "gray", "gray", "gray", "gray"
-          ]
+          "range": ["gray"]
         },
         "condition": {
           "selection": "highlight",
           "value": "red"
         }
+
       },
       "opacity": {
         "condition": {
@@ -64,13 +73,47 @@
           "value": 1
         },
         "value": 0.2
+      }
+
+
+    }
+  },
+  {
+    "transform": [
+      {"pivot": "Entity", "value": "Emissions", "groupby": ["Year"]}
+
+    ],
+    "mark": {"type": "rule", "opacity": 0},
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {"title": "Year", "tickCount": 8}
       },
       "tooltip": [
-        {"field": "Year", "type": "temporal", "formatType": "year"},
-        {"field": "Entity"},
-        {"field": "Emissions", "format": ".2f"}
+        {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"},
+        {"field": "Australia", "type": "quantitative", "format": ".1f"},
+        {"field": "China", "type": "quantitative", "format": ".1f"},
+        {"field": "United States", "type": "quantitative", "format": ".1f"},
+        {"field": "World", "type": "quantitative", "format": ".1f"},
+        {"field": "European Union", "type": "quantitative", "format": ".1f"},
+        {"field": "India", "type": "quantitative", "format": ".1f"},
+        {"field": "Africa", "type": "quantitative", "format": ".1f"}
       ]
-    }
+    },
+    "params": [{
+      "name": "hovering",
+      "select": {
+        "type": "point",
+        "on": "pointerover",
+        "clear": "pointerout",
+        "nearest": true,
+        "fields": ["Year"]
+      }
+    }]
+
+  }
+  ]
 
     
 }
