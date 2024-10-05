@@ -1,0 +1,26 @@
+.pure-g{
+	margin: 20px;
+	background-color: white;
+}
+
+.pure-u-1{
+	align-self: center;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+
+.my-heading{
+	text-align: center;
+	color: darkred;
+	font-family: Arial Black;
+	font-size: 50px;
+
+}
+
+.graph{
+	margin: 10px;
+	background-color: white;
+	align-items: center;
+	text-align: center;
+}

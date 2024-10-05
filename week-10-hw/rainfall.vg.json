@@ -1,0 +1,197 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Historical Yearly Rainfall",
+        "subtitle": "Total rainfall (mm) each year, 1914-2022. Source: BOM.",
+        "font": "arial black",
+        "fontSize": 30,
+        "subtitleFont": "serif",
+        "subtitleFontSize": 16
+    },
+    "width": 1000,
+    "height": 300,
+
+    "data": {
+        "url": "rainfall.csv",
+        "format": {
+        "type": "csv"
+        }
+    },
+    "params": [
+        {
+          "name": "selectedMonth",
+          "value": null,
+          "bind": {
+            "input": "select",
+            "name": "Month:           ",
+            "options": [null, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+            "labels": ["All", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+          }
+        }
+      ],
+    "transform": [
+        {
+          "filter": "!selectedMonth || datum.Month == selectedMonth"
+        },
+        {
+            "aggregate": [
+              {
+                "op": "sum",
+                "field": "Rain_Total",
+                "as": "Total_Rainfall"
+              }
+            ],
+            "groupby": ["Year"]
+        }
+    ],
+    "layer": [
+      {
+        "mark": {"type": "rect", "color": "brown"},
+        "encoding": {
+          "x": {
+            "datum": 1996,
+            "type": "quantitative",
+            "scale": {"domain": [1913, 2022]},
+            "axis":null
+        
+          },
+          "x2": {"datum": 2009}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "color": "white"
+        },
+        "encoding": {
+          "x": {
+            "datum": 2002.5,
+            "type": "quantitative",
+            "scale": {"domain": [1913, 2022]},
+            "axis":null
+        
+          },
+          "y": {
+            "aggregate": "max", "field": "Total_Rainfall"
+          },
+          "text": {
+            "value": "Millenium drought"
+          }
+        }
+      },
+      {
+        "mark": {"type": "rect", "color": "brown"},
+        "encoding": {
+          "x": {
+            "datum": 1936,
+            "type": "quantitative",
+            "scale": {"domain": [1913, 2022]},
+            "axis":null
+        
+          },
+          "x2": {"datum": 1945}
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "color": "white"
+        },
+        "encoding": {
+          "x": {
+            "datum": 1940.5,
+            "type": "quantitative",
+            "scale": {"domain": [1913, 2022]},
+            "axis":null
+        
+          },
+          "y": {
+            "aggregate": "max", "field": "Total_Rainfall"
+          },
+          "text": {
+            "value": "WWII drought"
+          }
+        }
+      },
+      {
+        "mark": {"type": "rect", "color": "brown"},
+        "encoding": {
+          "x": {
+            "datum": 1966,
+            "type": "quantitative",
+            "scale": {"domain": [1913, 2022]},
+            "axis":null
+        
+          },
+          "x2": {"datum": 1968}
+        }
+      },
+      {
+        "mark": {"type": "rect", "color": "brown"},
+        "encoding": {
+          "x": {
+            "datum": 1981,
+            "type": "quantitative",
+            "scale": {"domain": [1913, 2022]},
+            "axis":null
+        
+          },
+          "x2": {"datum": 1982.5}
+        }
+      },
+      {
+        "mark": {"type": "rect", "color": "brown"},
+        "encoding": {
+          "x": {
+            "datum": 2017,
+            "type": "quantitative",
+            "scale": {"domain": [1913, 2022]},
+            "axis":null
+        
+          },
+          "x2": {"datum": 2019}
+        }
+      },
+      {
+        "mark": "bar",
+        "encoding": {
+            "x": {
+              "field": "Year",
+              "type": "ordinal",
+              "axis": {
+                "title": "Year",
+                "labelExpr": "datum.value % 10 == 0 ? datum.label : ''",
+                "labelAngle": 0
+              }
+            },
+            "y": {
+              "field": "Total_Rainfall",
+              "type": "quantitative",
+              "axis": {
+                "title": "Total Rainfall (mm)"
+              },
+              "scale": {
+                "domainMin": 0
+              }
+            },
+            "color": {
+              "field": "Total_Rainfall",
+              "type": "quantitative",
+              "scale": {
+                "scheme": "blues"
+              },
+              "legend": {
+                "title": "Rainfall Amount"
+              }
+            },
+            "tooltip": [
+                {
+                    "field": "Total_Rainfall", "format": ".1f", "title": "Rainfall (mm)"
+                },
+                {"field": "Year"}
+            ]
+        }
+      }
+    ]
+}
+      

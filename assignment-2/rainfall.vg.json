@@ -169,6 +169,9 @@
               "type": "quantitative",
               "axis": {
                 "title": "Total Rainfall (mm)"
+              },
+              "scale": {
+                "domainMin": 0
               }
             },
             "color": {

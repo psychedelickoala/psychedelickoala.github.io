@@ -1,0 +1,68 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": {
+        "text": "Increase in Mean Temperature",
+        "subtitle": "Predicted change in mean temperature from 1986-2005 average (baseline) to 2015-2034 average. Source: CSIRO.",
+        "font": "arial black",
+        "fontSize": 30,
+        "subtitleFont": "serif",
+        "subtitleFontSize": 16
+    },
+    "width": 1200,
+    "height": 800,
+    "projection": {"type": "equirectangular"},
+    "layer": [
+        {
+            "data": {
+                "url":"fixed_data.csv"
+            },
+            "mark": {"type": "rect", "width":3, "height": 2},
+            "encoding": {
+                "longitude": {"field": "lon", "type":"quantitative"},
+                "latitude": {"field": "lat", "type":"quantitative"},
+                "color": {
+                    "field": "temp-change",
+                    "type": "quantitative",
+                    "title": "Increase in mean temperature (°C)",
+                    "scale": {"scheme": "goldorange"},
+                    "legend": {
+                        "orient": "bottom", 
+                        "titleAnchor":"middle",
+                        "gradientLength": 1200,
+                        "gradientThickness": 30,
+                        "tickCount": 8,
+                        "titleFontSize": 16,
+                        "titleFont": "arial",
+                        "titleLimit": 800
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "temp-change",
+                        "format": ".2f",
+                        "title": "Increase (°C)"
+                    }
+                ]
+            }
+        },
+        {
+            "data": {
+                "url": "australia.topojson",
+                "format": {"type": "topojson", "feature": "ne_110m_graticules_10"}
+
+            },
+            "mark": {"type": "geoshape", "fill":null, "stroke":"lightgray"}
+        },
+        {
+            "data": {
+                "url": "australia.topojson",
+                "format": {"type": "topojson", "feature": "ne_50m_admin_0_countries"}
+
+            },
+            "mark": {"type": "geoshape", "fill":null, "stroke":"black"}
+        }
+
+    ]
+
+    
+  }
