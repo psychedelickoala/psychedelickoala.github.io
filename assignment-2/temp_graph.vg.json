@@ -1,16 +1,16 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "sadgies",
-        "subtitle": "Predicted change in mean temperature from 1986-2005 average (baseline) to 2015-2034 average. Source: CSIRO.",
-        "font": "arial black",
-        "fontSize": 30,
-        "subtitleFont": "serif",
+        "text": "Historical Daily Temperatures",
+        "subtitle": "Mean daily maximum/minimum temperature by month and year, 1944 - 2023. Source: BOM.",
+        "fontSize": 20,
         "subtitleFontSize": 16
     },
-    "width": 1000,
-    "height": 300,
-
+    "width": 980,
+    "height": 400,
+    "config": {
+        "font": "Libre Baskerville"
+    },
     "data": {
         "url": "max-temp.csv",
         "format": {
@@ -23,6 +23,7 @@
           "value": null,
           "bind": {
             "input": "select",
+            "name": "Month:  ",
             "options": [null, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
             "labels": ["All", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
@@ -34,7 +35,8 @@
             "bind": {
               "input": "radio",
               "options": ["Mean_Max_Temp", "Mean_Min_Temp"],
-              "name": "Temperature Type"
+              "labels": ["Average daily maximum      ", "Average daily minimum"],
+              "name": "Temperature Type:    "
             }
           }
       ],
@@ -72,7 +74,7 @@
         "field": "value",
         "type": "quantitative",
         "scale": {
-            "scheme": "browns"
+            "scheme": "yelloworangebrown"
         },
         "legend": {
             "title": "Temperature (°C)"

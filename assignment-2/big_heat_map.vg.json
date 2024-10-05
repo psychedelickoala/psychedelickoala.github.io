@@ -1,15 +1,16 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "Increase in Mean Temperature",
-        "subtitle": "Predicted change in mean temperature from 1986-2005 average (baseline) to 2015-2034 average. Source: CSIRO.",
-        "font": "arial black",
-        "fontSize": 30,
-        "subtitleFont": "serif",
+        "text": "Predicted Increase in Mean Temperature",
+        "subtitle": "Predicted change in mean temperature from 1986-2005 average.",
+        "fontSize": 20,
         "subtitleFontSize": 16
     },
-    "width": 1200,
-    "height": 900,
+    "config": {
+        "font": "Libre Baskerville"
+    },
+    "width": 1100,
+    "height": 800,
     "params": [
         {
             "name": "yearselection", 
@@ -50,7 +51,7 @@
                     "legend": {
                         "orient": "bottom", 
                         "titleAnchor":"middle",
-                        "gradientLength": 800,
+                        "gradientLength": 1100,
                         "gradientThickness": 30,
                         "tickCount": 8,
                         "titleFontSize": 16,

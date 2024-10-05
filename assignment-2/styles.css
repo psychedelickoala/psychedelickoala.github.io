@@ -3,6 +3,10 @@
 	background-color: darkred;
 }
 
+.pure-u-2-3{
+	text-align: center;
+}
+
 .my-heading{
 	text-align: center;
 	color: beige;
@@ -13,11 +17,10 @@
 
 .graph{
 	margin: 10px;
+	padding: 10px;
 	background-color: white;
-}
-
-.container {
-	column-width: 500px;
+	text-align: center;
+	font: Libre Baskerville;
 }
 
 .my-text{
