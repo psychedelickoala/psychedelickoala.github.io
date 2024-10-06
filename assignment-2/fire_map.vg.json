@@ -1,21 +1,23 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "Fire Danger Rating",
-        "subtitle": "uh oh Source: CSIRO.",
-        "font": "arial black",
-        "fontSize": 30,
-        "subtitleFont": "serif",
+        "text": "Fire Danger Rating - Predicted Days per Year",
+        "subtitle": "Predicted number of days per year that the AFDRS rating is at or above a certain severity. Source: CSIRO.",
+        "fontSize": 20,
         "subtitleFontSize": 16
     },
     "width": 1000,
     "height": 650,
+    "config": {
+        "font": "Libre Baskerville"
+      },
     "params": [
         {
             "name": "yearselection", 
             "value": 2030,
             "bind": {
                 "input": "range",
+                "name": "Year   ",
                 "min": 2030,
                 "max": 2090,
                 "step": 20
@@ -66,7 +68,10 @@
                         "rangeMax": 6000
                     },
                     "legend": {
-                        "title": "Days per Year"
+                        "title": "Days per Year",
+                        "offset": -20,
+                        "titleFontSize": 16,
+                        "labelFontSize": 14
                     }
                 },
                 "color": {
@@ -75,6 +80,12 @@
                     "scale": {
                         "domain": ["High", "Very High", "Severe", "Extreme"],
                         "range": ["yellow", "orange", "red", "darkred"]
+                    },
+                    "legend": {
+                        "title": "Rating",
+                        "titleFontSize": 16,
+                        "symbolSize": 300,
+                        "labelFontSize": 14
                     }
                 },
                 "tooltip": [

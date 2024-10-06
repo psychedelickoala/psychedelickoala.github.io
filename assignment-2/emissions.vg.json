@@ -79,6 +79,50 @@
     }
   },
   {
+    "mark": {"type": "rule", "color": "lightgreen"},
+    "encoding": {
+      "x": {
+        "value": 915
+      }
+    }
+  },
+  {
+    "mark": {"type": "text", "color": "gray", "align": "right"},
+    "encoding": {
+      "x": {
+        "value": 910
+      },
+      "y":{
+        "value": 20
+      },
+      "text": {
+        "value": "Kyoto protocol"
+      }
+    }
+  },
+  {
+    "mark": {"type": "rule", "color": "lightblue", "opacity": 0.2},
+    "encoding": {
+      "x": {
+        "value": 970
+      }
+    }
+  },
+  {
+    "mark": {"type": "text", "color": "gray", "align": "right"},
+    "encoding": {
+      "x": {
+        "value": 965
+      },
+      "y":{
+        "value": 35
+      },
+      "text": {
+        "value": "Paris agreement"
+      }
+    }
+  },
+  {
     "transform": [
       {"pivot": "Entity", "value": "Emissions", "groupby": ["Year"]}
 

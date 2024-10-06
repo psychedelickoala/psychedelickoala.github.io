@@ -1,6 +1,11 @@
 .pure-g{
 	margin: 10px;
-	background-color: darkred;
+	background-color:darkred;
+}
+
+.my-bg{
+	margin: 30px; 
+	background-color: brown;
 }
 
 .pure-u-2-3{
@@ -9,7 +14,7 @@
 
 .my-heading{
 	text-align: center;
-	color: beige;
+	color: bisque;
 	font-family: Bona Nova SC;
 	font-size: 50px;
 
@@ -27,6 +32,8 @@
 	color: white;
 	font-family:Libre Baskerville;
 	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: justify;
-	font-size: 16px;
+	font-size: 18px;
 }

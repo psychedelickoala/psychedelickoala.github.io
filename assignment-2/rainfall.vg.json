@@ -1,16 +1,16 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": {
-        "text": "r a i n",
-        "subtitle": "Predicted change in mean temperature from 1986-2005 average (baseline) to 2015-2034 average. Source: CSIRO.",
-        "font": "arial black",
-        "fontSize": 30,
-        "subtitleFont": "serif",
+        "text": "Historical Yearly Rainfall and Drought",
+        "subtitle": "Total yearly/monthly rainfall (mm) in Oakleigh, VIC, and drought years, 1914-2022. Source: BOM.",
+        "fontSize": 20,
         "subtitleFontSize": 16
     },
-    "width": 1000,
-    "height": 300,
-
+    "width": 980,
+    "height": 400,
+    "config": {
+      "font": "Libre Baskerville"
+    },
     "data": {
         "url": "rainfall.csv",
         "format": {
@@ -23,6 +23,7 @@
           "value": null,
           "bind": {
             "input": "select",
+            "name": "Month:   ",
             "options": [null, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
             "labels": ["All", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
@@ -46,7 +47,7 @@
     ],
     "layer": [
       {
-        "mark": {"type": "rect", "color": "brown"},
+        "mark": {"type": "rect", "color": "#ad2e23"},
         "encoding": {
           "x": {
             "datum": 1996,
@@ -61,7 +62,8 @@
       {
         "mark": {
           "type": "text",
-          "color": "white"
+          "color": "white",
+          "size": 10
         },
         "encoding": {
           "x": {
@@ -80,7 +82,7 @@
         }
       },
       {
-        "mark": {"type": "rect", "color": "brown"},
+        "mark": {"type": "rect", "color": "#ad2e23"},
         "encoding": {
           "x": {
             "datum": 1936,
@@ -95,7 +97,8 @@
       {
         "mark": {
           "type": "text",
-          "color": "white"
+          "color": "white",
+          "size": 10
         },
         "encoding": {
           "x": {
@@ -114,7 +117,7 @@
         }
       },
       {
-        "mark": {"type": "rect", "color": "brown"},
+        "mark": {"type": "rect", "color": "#ad2e23"},
         "encoding": {
           "x": {
             "datum": 1966,
@@ -127,7 +130,7 @@
         }
       },
       {
-        "mark": {"type": "rect", "color": "brown"},
+        "mark": {"type": "rect", "color": "#ad2e23"},
         "encoding": {
           "x": {
             "datum": 1981,
@@ -140,7 +143,7 @@
         }
       },
       {
-        "mark": {"type": "rect", "color": "brown"},
+        "mark": {"type": "rect", "color": "#ad2e23"},
         "encoding": {
           "x": {
             "datum": 2017,
@@ -178,10 +181,10 @@
               "field": "Total_Rainfall",
               "type": "quantitative",
               "scale": {
-                "scheme": "blues"
+                "scheme": "lighttealblue"
               },
               "legend": {
-                "title": "Rainfall Amount"
+                "title": "Rainfall (mm)"
               }
             },
             "tooltip": [
