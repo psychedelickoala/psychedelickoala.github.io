@@ -1,0 +1,926 @@
+﻿year,reason,amount,state
+2004-05,family,12370,New South Wales
+2005-06,family,13250,New South Wales
+2006-07,family,13530,New South Wales
+2007-08,family,13810,New South Wales
+2008-09,family,14230,New South Wales
+2009-10,family,13950,New South Wales
+2010-11,family,13090,New South Wales
+2011-12,family,13120,New South Wales
+2012-13,family,13280,New South Wales
+2013-14,family,13160,New South Wales
+2014-15,family,11770,New South Wales
+2015-16,family,11580,New South Wales
+2016-17,family,11070,New South Wales
+2017-18,family,9720,New South Wales
+2018-19,family,8830,New South Wales
+2019-20,family,7330,New South Wales
+2020-21,family,7580,New South Wales
+2021-22,family,9630,New South Wales
+2022-23(f),family,7420,New South Wales
+2004-05,family,7850,Victoria
+2005-06,family,8190,Victoria
+2006-07,family,8990,Victoria
+2007-08,family,9180,Victoria
+2008-09,family,9770,Victoria
+2009-10,family,10050,Victoria
+2010-11,family,9790,Victoria
+2011-12,family,10040,Victoria
+2012-13,family,9930,Victoria
+2013-14,family,10470,Victoria
+2014-15,family,9600,Victoria
+2015-16,family,9680,Victoria
+2016-17,family,9290,Victoria
+2017-18,family,8420,Victoria
+2018-19,family,7960,Victoria
+2019-20,family,6620,Victoria
+2020-21,family,3920,Victoria
+2021-22,family,8040,Victoria
+2022-23(f),family,6910,Victoria
+2016-17,family,9290,Victoria
+2017-18,family,8420,Victoria
+2018-19,family,7960,Victoria
+2019-20,family,6620,Victoria
+2020-21,family,3920,Victoria
+2021-22,family,8040,Victoria
+2022-23(f),family,6910,Victoria
+2004-05,family,3560,Queensland
+2005-06,family,3900,Queensland
+2006-07,family,4340,Queensland
+2007-08,family,4310,Queensland
+2008-09,family,4740,Queensland
+2009-10,family,4840,Queensland
+2010-11,family,4250,Queensland
+2011-12,family,4720,Queensland
+2012-13,family,4610,Queensland
+2013-14,family,4670,Queensland
+2014-15,family,4180,Queensland
+2015-16,family,4070,Queensland
+2016-17,family,3730,Queensland
+2017-18,family,3200,Queensland
+2018-19,family,3040,Queensland
+2019-20,family,2470,Queensland
+2020-21,family,1740,Queensland
+2021-22,family,3480,Queensland
+2022-23(f),family,2760,Queensland
+2016-17,family,3730,Queensland
+2017-18,family,3200,Queensland
+2018-19,family,3040,Queensland
+2019-20,family,2470,Queensland
+2020-21,family,1740,Queensland
+2021-22,family,3480,Queensland
+2022-23(f),family,2760,Queensland
+2004-05,family,1230,South Australia
+2005-06,family,1360,South Australia
+2006-07,family,1590,South Australia
+2007-08,family,1560,South Australia
+2008-09,family,1660,South Australia
+2009-10,family,1840,South Australia
+2010-11,family,1690,South Australia
+2011-12,family,1840,South Australia
+2012-13,family,1980,South Australia
+2013-14,family,2090,South Australia
+2014-15,family,1960,South Australia
+2015-16,family,1800,South Australia
+2016-17,family,1650,South Australia
+2017-18,family,1550,South Australia
+2018-19,family,1390,South Australia
+2019-20,family,1230,South Australia
+2020-21,family,770,South Australia
+2021-22,family,1380,South Australia
+2022-23(f),family,1240,South Australia
+2004-05,family,2710,Western Australia
+2005-06,family,2890,Western Australia
+2006-07,family,3150,Western Australia
+2007-08,family,3330,Western Australia
+2008-09,family,3560,Western Australia
+2009-10,family,3800,Western Australia
+2010-11,family,3940,Western Australia
+2011-12,family,3870,Western Australia
+2012-13,family,4270,Western Australia
+2013-14,family,3950,Western Australia
+2014-15,family,3510,Western Australia
+2015-16,family,3560,Western Australia
+2016-17,family,3020,Western Australia
+2017-18,family,2580,Western Australia
+2018-19,family,2360,Western Australia
+2019-20,family,2060,Western Australia
+2020-21,family,1230,Western Australia
+2021-22,family,2510,Western Australia
+2022-23(f),family,2230,Western Australia
+2004-05,family,180,Tasmania
+2005-06,family,220,Tasmania
+2006-07,family,200,Tasmania
+2007-08,family,240,Tasmania
+2008-09,family,290,Tasmania
+2009-10,family,280,Tasmania
+2010-11,family,190,Tasmania
+2011-12,family,240,Tasmania
+2012-13,family,240,Tasmania
+2013-14,family,220,Tasmania
+2014-15,family,220,Tasmania
+2015-16,family,200,Tasmania
+2016-17,family,200,Tasmania
+2017-18,family,140,Tasmania
+2018-19,family,160,Tasmania
+2019-20,family,130,Tasmania
+2020-21,family,80,Tasmania
+2021-22,family,180,Tasmania
+2022-23(f),family,130,Tasmania
+2004-05,family,190,Northern Territory
+2005-06,family,190,Northern Territory
+2006-07,family,250,Northern Territory
+2007-08,family,260,Northern Territory
+2008-09,family,300,Northern Territory
+2009-10,family,350,Northern Territory
+2010-11,family,290,Northern Territory
+2011-12,family,360,Northern Territory
+2012-13,family,410,Northern Territory
+2013-14,family,420,Northern Territory
+2014-15,family,300,Northern Territory
+2015-16,family,270,Northern Territory
+2016-17,family,280,Northern Territory
+2017-18,family,210,Northern Territory
+2018-19,family,180,Northern Territory
+2019-20,family,130,Northern Territory
+2020-21,family,80,Northern Territory
+2021-22,family,230,Northern Territory
+2022-23(f),family,110,Northern Territory
+2004-05,family,350,Australian Capital Territory
+2005-06,family,400,Australian Capital Territory
+2006-07,family,440,Australian Capital Territory
+2007-08,family,410,Australian Capital Territory
+2008-09,family,510,Australian Capital Territory
+2009-10,family,490,Australian Capital Territory
+2010-11,family,500,Australian Capital Territory
+2011-12,family,580,Australian Capital Territory
+2012-13,family,540,Australian Capital Territory
+2013-14,family,550,Australian Capital Territory
+2014-15,family,520,Australian Capital Territory
+2015-16,family,440,Australian Capital Territory
+2016-17,family,450,Australian Capital Territory
+2017-18,family,460,Australian Capital Territory
+2018-19,family,370,Australian Capital Territory
+2019-20,family,330,Australian Capital Territory
+2020-21,family,250,Australian Capital Territory
+2021-22,family,450,Australian Capital Territory
+2022-23(f),family,320,Australian Capital Territory
+2004-05,family,28430,Australia
+2005-06,family,30400,Australia
+2006-07,family,32480,Australia
+2007-08,family,33100,Australia
+2008-09,family,35060,Australia
+2009-10,family,35580,Australia
+2010-11,family,33730,Australia
+2011-12,family,34770,Australia
+2012-13,family,35230,Australia
+2013-14,family,35510,Australia
+2014-15,family,32050,Australia
+2015-16,family,31590,Australia
+2016-17,family,29680,Australia
+2017-18,family,26280,Australia
+2018-19,family,24290,Australia
+2019-20,family,20300,Australia
+2020-21,family,15650,Australia
+2021-22,family,25910,Australia
+2022-23(g),family,21120,Australia
+2004-05,skilled-permanent,11690,New South Wales
+2005-06,skilled-permanent,12410,New South Wales
+2006-07,skilled-permanent,12890,New South Wales
+2007-08,skilled-permanent,13530,New South Wales
+2008-09,skilled-permanent,12730,New South Wales
+2009-10,skilled-permanent,10040,New South Wales
+2010-11,skilled-permanent,9040,New South Wales
+2011-12,skilled-permanent,9440,New South Wales
+2012-13,skilled-permanent,8990,New South Wales
+2013-14,skilled-permanent,11040,New South Wales
+2014-15,skilled-permanent,12290,New South Wales
+2015-16,skilled-permanent,13230,New South Wales
+2016-17,skilled-permanent,16190,New South Wales
+2017-18,skilled-permanent,15380,New South Wales
+2018-19,skilled-permanent,13000,New South Wales
+2019-20,skilled-permanent,9290,New South Wales
+2020-21,skilled-permanent,7250,New South Wales
+2021-22,skilled-permanent,8790,New South Wales
+2022-23(f),skilled-permanent,9620,New South Wales
+2004-05,skilled-permanent,9330,Victoria
+2005-06,skilled-permanent,11080,Victoria
+2006-07,skilled-permanent,12620,Victoria
+2007-08,skilled-permanent,14290,Victoria
+2008-09,skilled-permanent,13660,Victoria
+2009-10,skilled-permanent,11580,Victoria
+2010-11,skilled-permanent,9710,Victoria
+2011-12,skilled-permanent,10810,Victoria
+2012-13,skilled-permanent,10650,Victoria
+2013-14,skilled-permanent,11430,Victoria
+2014-15,skilled-permanent,12890,Victoria
+2015-16,skilled-permanent,13420,Victoria
+2016-17,skilled-permanent,15230,Victoria
+2017-18,skilled-permanent,14410,Victoria
+2018-19,skilled-permanent,12660,Victoria
+2019-20,skilled-permanent,8420,Victoria
+2020-21,skilled-permanent,3630,Victoria
+2021-22,skilled-permanent,9260,Victoria
+2022-23(f),skilled-permanent,10620,Victoria
+2016-17,skilled-permanent,15230,Victoria
+2017-18,skilled-permanent,14410,Victoria
+2018-19,skilled-permanent,12660,Victoria
+2019-20,skilled-permanent,8420,Victoria
+2020-21,skilled-permanent,3630,Victoria
+2021-22,skilled-permanent,9260,Victoria
+2022-23(f),skilled-permanent,10620,Victoria
+2004-05,skilled-permanent,5150,Queensland
+2005-06,skilled-permanent,6100,Queensland
+2006-07,skilled-permanent,7030,Queensland
+2007-08,skilled-permanent,7970,Queensland
+2008-09,skilled-permanent,7250,Queensland
+2009-10,skilled-permanent,5180,Queensland
+2010-11,skilled-permanent,4420,Queensland
+2011-12,skilled-permanent,5060,Queensland
+2012-13,skilled-permanent,4080,Queensland
+2013-14,skilled-permanent,4030,Queensland
+2014-15,skilled-permanent,4490,Queensland
+2015-16,skilled-permanent,4380,Queensland
+2016-17,skilled-permanent,4860,Queensland
+2017-18,skilled-permanent,4480,Queensland
+2018-19,skilled-permanent,4170,Queensland
+2019-20,skilled-permanent,3240,Queensland
+2020-21,skilled-permanent,1550,Queensland
+2021-22,skilled-permanent,3340,Queensland
+2022-23(f),skilled-permanent,4750,Queensland
+2016-17,skilled-permanent,4860,Queensland
+2017-18,skilled-permanent,4480,Queensland
+2018-19,skilled-permanent,4170,Queensland
+2019-20,skilled-permanent,3240,Queensland
+2020-21,skilled-permanent,1550,Queensland
+2021-22,skilled-permanent,3340,Queensland
+2022-23(f),skilled-permanent,4750,Queensland
+2004-05,skilled-permanent,2550,South Australia
+2005-06,skilled-permanent,4530,South Australia
+2006-07,skilled-permanent,5220,South Australia
+2007-08,skilled-permanent,5320,South Australia
+2008-09,skilled-permanent,4710,South Australia
+2009-10,skilled-permanent,6040,South Australia
+2010-11,skilled-permanent,3230,South Australia
+2011-12,skilled-permanent,4930,South Australia
+2012-13,skilled-permanent,4120,South Australia
+2013-14,skilled-permanent,3760,South Australia
+2014-15,skilled-permanent,4240,South Australia
+2015-16,skilled-permanent,3820,South Australia
+2016-17,skilled-permanent,3800,South Australia
+2017-18,skilled-permanent,4110,South Australia
+2018-19,skilled-permanent,4090,South Australia
+2019-20,skilled-permanent,3340,South Australia
+2020-21,skilled-permanent,780,South Australia
+2021-22,skilled-permanent,2870,South Australia
+2022-23(f),skilled-permanent,3980,South Australia
+2004-05,skilled-permanent,6190,Western Australia
+2005-06,skilled-permanent,7860,Western Australia
+2006-07,skilled-permanent,8960,Western Australia
+2007-08,skilled-permanent,9450,Western Australia
+2008-09,skilled-permanent,8750,Western Australia
+2009-10,skilled-permanent,7080,Western Australia
+2010-11,skilled-permanent,5880,Western Australia
+2011-12,skilled-permanent,9210,Western Australia
+2012-13,skilled-permanent,9080,Western Australia
+2013-14,skilled-permanent,8600,Western Australia
+2014-15,skilled-permanent,6540,Western Australia
+2015-16,skilled-permanent,5540,Western Australia
+2016-17,skilled-permanent,4540,Western Australia
+2017-18,skilled-permanent,3390,Western Australia
+2018-19,skilled-permanent,2560,Western Australia
+2019-20,skilled-permanent,1800,Western Australia
+2020-21,skilled-permanent,950,Western Australia
+2021-22,skilled-permanent,2130,Western Australia
+2022-23(f),skilled-permanent,3830,Western Australia
+2004-05,skilled-permanent,190,Tasmania
+2005-06,skilled-permanent,230,Tasmania
+2006-07,skilled-permanent,260,Tasmania
+2007-08,skilled-permanent,270,Tasmania
+2008-09,skilled-permanent,310,Tasmania
+2009-10,skilled-permanent,270,Tasmania
+2010-11,skilled-permanent,150,Tasmania
+2011-12,skilled-permanent,190,Tasmania
+2012-13,skilled-permanent,160,Tasmania
+2013-14,skilled-permanent,110,Tasmania
+2014-15,skilled-permanent,120,Tasmania
+2015-16,skilled-permanent,130,Tasmania
+2016-17,skilled-permanent,210,Tasmania
+2017-18,skilled-permanent,340,Tasmania
+2018-19,skilled-permanent,580,Tasmania
+2019-20,skilled-permanent,450,Tasmania
+2020-21,skilled-permanent,160,Tasmania
+2021-22,skilled-permanent,710,Tasmania
+2022-23(f),skilled-permanent,730,Tasmania
+2004-05,skilled-permanent,110,Northern Territory
+2005-06,skilled-permanent,130,Northern Territory
+2006-07,skilled-permanent,190,Northern Territory
+2007-08,skilled-permanent,190,Northern Territory
+2008-09,skilled-permanent,240,Northern Territory
+2009-10,skilled-permanent,280,Northern Territory
+2010-11,skilled-permanent,210,Northern Territory
+2011-12,skilled-permanent,350,Northern Territory
+2012-13,skilled-permanent,270,Northern Territory
+2013-14,skilled-permanent,420,Northern Territory
+2014-15,skilled-permanent,560,Northern Territory
+2015-16,skilled-permanent,620,Northern Territory
+2016-17,skilled-permanent,600,Northern Territory
+2017-18,skilled-permanent,560,Northern Territory
+2018-19,skilled-permanent,590,Northern Territory
+2019-20,skilled-permanent,340,Northern Territory
+2020-21,skilled-permanent,90,Northern Territory
+2021-22,skilled-permanent,480,Northern Territory
+2022-23(f),skilled-permanent,610,Northern Territory
+2004-05,skilled-permanent,340,Australian Capital Territory
+2005-06,skilled-permanent,410,Australian Capital Territory
+2006-07,skilled-permanent,380,Australian Capital Territory
+2007-08,skilled-permanent,570,Australian Capital Territory
+2008-09,skilled-permanent,710,Australian Capital Territory
+2009-10,skilled-permanent,670,Australian Capital Territory
+2010-11,skilled-permanent,420,Australian Capital Territory
+2011-12,skilled-permanent,1000,Australian Capital Territory
+2012-13,skilled-permanent,680,Australian Capital Territory
+2013-14,skilled-permanent,950,Australian Capital Territory
+2014-15,skilled-permanent,1110,Australian Capital Territory
+2015-16,skilled-permanent,720,Australian Capital Territory
+2016-17,skilled-permanent,700,Australian Capital Territory
+2017-18,skilled-permanent,670,Australian Capital Territory
+2018-19,skilled-permanent,590,Australian Capital Territory
+2019-20,skilled-permanent,400,Australian Capital Territory
+2020-21,skilled-permanent,220,Australian Capital Territory
+2021-22,skilled-permanent,520,Australian Capital Territory
+2022-23(f),skilled-permanent,910,Australian Capital Territory
+2004-05,skilled-permanent,35540,Australia
+2005-06,skilled-permanent,42750,Australia
+2006-07,skilled-permanent,47540,Australia
+2007-08,skilled-permanent,51600,Australia
+2008-09,skilled-permanent,48360,Australia
+2009-10,skilled-permanent,41140,Australia
+2010-11,skilled-permanent,33060,Australia
+2011-12,skilled-permanent,40980,Australia
+2012-13,skilled-permanent,38020,Australia
+2013-14,skilled-permanent,40330,Australia
+2014-15,skilled-permanent,42240,Australia
+2015-16,skilled-permanent,41850,Australia
+2016-17,skilled-permanent,46140,Australia
+2017-18,skilled-permanent,43320,Australia
+2018-19,skilled-permanent,38230,Australia
+2019-20,skilled-permanent,27280,Australia
+2020-21,skilled-permanent,14620,Australia
+2021-22,skilled-permanent,28100,Australia
+2022-23(g),skilled-permanent,35050,Australia
+2004-05,special-eligibility-humanitarian,4420,New South Wales
+2005-06,special-eligibility-humanitarian,4410,New South Wales
+2006-07,special-eligibility-humanitarian,4200,New South Wales
+2007-08,special-eligibility-humanitarian,2950,New South Wales
+2008-09,special-eligibility-humanitarian,4080,New South Wales
+2009-10,special-eligibility-humanitarian,3200,New South Wales
+2010-11,special-eligibility-humanitarian,2840,New South Wales
+2011-12,special-eligibility-humanitarian,2030,New South Wales
+2012-13,special-eligibility-humanitarian,2790,New South Wales
+2013-14,special-eligibility-humanitarian,4480,New South Wales
+2014-15,special-eligibility-humanitarian,4770,New South Wales
+2015-16,special-eligibility-humanitarian,3340,New South Wales
+2016-17,special-eligibility-humanitarian,10720,New South Wales
+2017-18,special-eligibility-humanitarian,4390,New South Wales
+2018-19,special-eligibility-humanitarian,6250,New South Wales
+2019-20,special-eligibility-humanitarian,5290,New South Wales
+2020-21,special-eligibility-humanitarian,170,New South Wales
+2021-22,special-eligibility-humanitarian,3150,New South Wales
+2022-23(f),special-eligibility-humanitarian,4260,New South Wales
+2004-05,special-eligibility-humanitarian,3940,Victoria
+2005-06,special-eligibility-humanitarian,3440,Victoria
+2006-07,special-eligibility-humanitarian,3380,Victoria
+2007-08,special-eligibility-humanitarian,2740,Victoria
+2008-09,special-eligibility-humanitarian,3040,Victoria
+2009-10,special-eligibility-humanitarian,2650,Victoria
+2010-11,special-eligibility-humanitarian,2440,Victoria
+2011-12,special-eligibility-humanitarian,2180,Victoria
+2012-13,special-eligibility-humanitarian,2960,Victoria
+2013-14,special-eligibility-humanitarian,3540,Victoria
+2014-15,special-eligibility-humanitarian,3600,Victoria
+2015-16,special-eligibility-humanitarian,3210,Victoria
+2016-17,special-eligibility-humanitarian,7220,Victoria
+2017-18,special-eligibility-humanitarian,3650,Victoria
+2018-19,special-eligibility-humanitarian,4110,Victoria
+2019-20,special-eligibility-humanitarian,3650,Victoria
+2020-21,special-eligibility-humanitarian,150,Victoria
+2021-22,special-eligibility-humanitarian,2740,Victoria
+2022-23(f),special-eligibility-humanitarian,4360,Victoria
+2016-17,special-eligibility-humanitarian,7220,Victoria
+2017-18,special-eligibility-humanitarian,3650,Victoria
+2018-19,special-eligibility-humanitarian,4110,Victoria
+2019-20,special-eligibility-humanitarian,3650,Victoria
+2020-21,special-eligibility-humanitarian,150,Victoria
+2021-22,special-eligibility-humanitarian,2740,Victoria
+2022-23(f),special-eligibility-humanitarian,4360,Victoria
+2004-05,special-eligibility-humanitarian,1580,Queensland
+2005-06,special-eligibility-humanitarian,1450,Queensland
+2006-07,special-eligibility-humanitarian,1460,Queensland
+2007-08,special-eligibility-humanitarian,1030,Queensland
+2008-09,special-eligibility-humanitarian,1160,Queensland
+2009-10,special-eligibility-humanitarian,1300,Queensland
+2010-11,special-eligibility-humanitarian,1360,Queensland
+2011-12,special-eligibility-humanitarian,1270,Queensland
+2012-13,special-eligibility-humanitarian,1090,Queensland
+2013-14,special-eligibility-humanitarian,2060,Queensland
+2014-15,special-eligibility-humanitarian,1380,Queensland
+2015-16,special-eligibility-humanitarian,1950,Queensland
+2016-17,special-eligibility-humanitarian,2730,Queensland
+2017-18,special-eligibility-humanitarian,1880,Queensland
+2018-19,special-eligibility-humanitarian,2500,Queensland
+2019-20,special-eligibility-humanitarian,1920,Queensland
+2020-21,special-eligibility-humanitarian,130,Queensland
+2021-22,special-eligibility-humanitarian,720,Queensland
+2022-23(f),special-eligibility-humanitarian,1330,Queensland
+2016-17,special-eligibility-humanitarian,2730,Queensland
+2017-18,special-eligibility-humanitarian,1880,Queensland
+2018-19,special-eligibility-humanitarian,2500,Queensland
+2019-20,special-eligibility-humanitarian,1920,Queensland
+2020-21,special-eligibility-humanitarian,130,Queensland
+2021-22,special-eligibility-humanitarian,720,Queensland
+2022-23(f),special-eligibility-humanitarian,1330,Queensland
+2004-05,special-eligibility-humanitarian,1220,South Australia
+2005-06,special-eligibility-humanitarian,1100,South Australia
+2006-07,special-eligibility-humanitarian,1220,South Australia
+2007-08,special-eligibility-humanitarian,840,South Australia
+2008-09,special-eligibility-humanitarian,1050,South Australia
+2009-10,special-eligibility-humanitarian,990,South Australia
+2010-11,special-eligibility-humanitarian,1150,South Australia
+2011-12,special-eligibility-humanitarian,960,South Australia
+2012-13,special-eligibility-humanitarian,720,South Australia
+2013-14,special-eligibility-humanitarian,1230,South Australia
+2014-15,special-eligibility-humanitarian,790,South Australia
+2015-16,special-eligibility-humanitarian,1080,South Australia
+2016-17,special-eligibility-humanitarian,1440,South Australia
+2017-18,special-eligibility-humanitarian,860,South Australia
+2018-19,special-eligibility-humanitarian,1000,South Australia
+2019-20,special-eligibility-humanitarian,960,South Australia
+2020-21,special-eligibility-humanitarian,90,South Australia
+2021-22,special-eligibility-humanitarian,580,South Australia
+2022-23(f),special-eligibility-humanitarian,1250,South Australia
+2004-05,special-eligibility-humanitarian,1780,Western Australia
+2005-06,special-eligibility-humanitarian,1380,Western Australia
+2006-07,special-eligibility-humanitarian,1680,Western Australia
+2007-08,special-eligibility-humanitarian,1440,Western Australia
+2008-09,special-eligibility-humanitarian,1710,Western Australia
+2009-10,special-eligibility-humanitarian,1170,Western Australia
+2010-11,special-eligibility-humanitarian,810,Western Australia
+2011-12,special-eligibility-humanitarian,750,Western Australia
+2012-13,special-eligibility-humanitarian,520,Western Australia
+2013-14,special-eligibility-humanitarian,820,Western Australia
+2014-15,special-eligibility-humanitarian,730,Western Australia
+2015-16,special-eligibility-humanitarian,880,Western Australia
+2016-17,special-eligibility-humanitarian,990,Western Australia
+2017-18,special-eligibility-humanitarian,660,Western Australia
+2018-19,special-eligibility-humanitarian,650,Western Australia
+2019-20,special-eligibility-humanitarian,540,Western Australia
+2020-21,special-eligibility-humanitarian,40,Western Australia
+2021-22,special-eligibility-humanitarian,350,Western Australia
+2022-23(f),special-eligibility-humanitarian,810,Western Australia
+2004-05,special-eligibility-humanitarian,300,Tasmania
+2005-06,special-eligibility-humanitarian,200,Tasmania
+2006-07,special-eligibility-humanitarian,240,Tasmania
+2007-08,special-eligibility-humanitarian,230,Tasmania
+2008-09,special-eligibility-humanitarian,300,Tasmania
+2009-10,special-eligibility-humanitarian,390,Tasmania
+2010-11,special-eligibility-humanitarian,370,Tasmania
+2011-12,special-eligibility-humanitarian,370,Tasmania
+2012-13,special-eligibility-humanitarian,380,Tasmania
+2013-14,special-eligibility-humanitarian,800,Tasmania
+2014-15,special-eligibility-humanitarian,290,Tasmania
+2015-16,special-eligibility-humanitarian,370,Tasmania
+2016-17,special-eligibility-humanitarian,640,Tasmania
+2017-18,special-eligibility-humanitarian,520,Tasmania
+2018-19,special-eligibility-humanitarian,530,Tasmania
+2019-20,special-eligibility-humanitarian,420,Tasmania
+2020-21,special-eligibility-humanitarian,0,Tasmania
+2021-22,special-eligibility-humanitarian,70,Tasmania
+2022-23(f),special-eligibility-humanitarian,330,Tasmania
+2004-05,special-eligibility-humanitarian,120,Northern Territory
+2005-06,special-eligibility-humanitarian,150,Northern Territory
+2006-07,special-eligibility-humanitarian,140,Northern Territory
+2007-08,special-eligibility-humanitarian,90,Northern Territory
+2008-09,special-eligibility-humanitarian,100,Northern Territory
+2009-10,special-eligibility-humanitarian,100,Northern Territory
+2010-11,special-eligibility-humanitarian,80,Northern Territory
+2011-12,special-eligibility-humanitarian,70,Northern Territory
+2012-13,special-eligibility-humanitarian,30,Northern Territory
+2013-14,special-eligibility-humanitarian,90,Northern Territory
+2014-15,special-eligibility-humanitarian,20,Northern Territory
+2015-16,special-eligibility-humanitarian,70,Northern Territory
+2016-17,special-eligibility-humanitarian,100,Northern Territory
+2017-18,special-eligibility-humanitarian,40,Northern Territory
+2018-19,special-eligibility-humanitarian,90,Northern Territory
+2019-20,special-eligibility-humanitarian,60,Northern Territory
+2020-21,special-eligibility-humanitarian,10,Northern Territory
+2021-22,special-eligibility-humanitarian,70,Northern Territory
+2022-23(f),special-eligibility-humanitarian,190,Northern Territory
+2004-05,special-eligibility-humanitarian,220,Australian Capital Territory
+2005-06,special-eligibility-humanitarian,190,Australian Capital Territory
+2006-07,special-eligibility-humanitarian,90,Australian Capital Territory
+2007-08,special-eligibility-humanitarian,170,Australian Capital Territory
+2008-09,special-eligibility-humanitarian,190,Australian Capital Territory
+2009-10,special-eligibility-humanitarian,120,Australian Capital Territory
+2010-11,special-eligibility-humanitarian,130,Australian Capital Territory
+2011-12,special-eligibility-humanitarian,70,Australian Capital Territory
+2012-13,special-eligibility-humanitarian,50,Australian Capital Territory
+2013-14,special-eligibility-humanitarian,150,Australian Capital Territory
+2014-15,special-eligibility-humanitarian,120,Australian Capital Territory
+2015-16,special-eligibility-humanitarian,190,Australian Capital Territory
+2016-17,special-eligibility-humanitarian,290,Australian Capital Territory
+2017-18,special-eligibility-humanitarian,190,Australian Capital Territory
+2018-19,special-eligibility-humanitarian,210,Australian Capital Territory
+2019-20,special-eligibility-humanitarian,170,Australian Capital Territory
+2020-21,special-eligibility-humanitarian,10,Australian Capital Territory
+2021-22,special-eligibility-humanitarian,100,Australian Capital Territory
+2022-23(f),special-eligibility-humanitarian,180,Australian Capital Territory
+2004-05,special-eligibility-humanitarian,13580,Australia
+2005-06,special-eligibility-humanitarian,12320,Australia
+2006-07,special-eligibility-humanitarian,12400,Australia
+2007-08,special-eligibility-humanitarian,9470,Australia
+2008-09,special-eligibility-humanitarian,11630,Australia
+2009-10,special-eligibility-humanitarian,9920,Australia
+2010-11,special-eligibility-humanitarian,9180,Australia
+2011-12,special-eligibility-humanitarian,7700,Australia
+2012-13,special-eligibility-humanitarian,8540,Australia
+2013-14,special-eligibility-humanitarian,13170,Australia
+2014-15,special-eligibility-humanitarian,11690,Australia
+2015-16,special-eligibility-humanitarian,11080,Australia
+2016-17,special-eligibility-humanitarian,24120,Australia
+2017-18,special-eligibility-humanitarian,12190,Australia
+2018-19,special-eligibility-humanitarian,15340,Australia
+2019-20,special-eligibility-humanitarian,13000,Australia
+2020-21,special-eligibility-humanitarian,590,Australia
+2021-22,special-eligibility-humanitarian,7780,Australia
+2022-23(g),special-eligibility-humanitarian,12710,Australia
+2004-05,other,1350,New South Wales
+2005-06,other,1360,New South Wales
+2006-07,other,1370,New South Wales
+2007-08,other,1470,New South Wales
+2008-09,other,1460,New South Wales
+2009-10,other,1470,New South Wales
+2010-11,other,1550,New South Wales
+2011-12,other,1600,New South Wales
+2012-13,other,1800,New South Wales
+2013-14,other,2070,New South Wales
+2014-15,other,2020,New South Wales
+2015-16,other,2190,New South Wales
+2016-17,other,2270,New South Wales
+2017-18,other,2190,New South Wales
+2018-19,other,2670,New South Wales
+2019-20,other,3760,New South Wales
+2020-21,other,3040,New South Wales
+2021-22,other,3540,New South Wales
+2022-23(f),other,4120,New South Wales
+2004-05,other,880,Victoria
+2005-06,other,830,Victoria
+2006-07,other,930,Victoria
+2007-08,other,960,Victoria
+2008-09,other,990,Victoria
+2009-10,other,1020,Victoria
+2010-11,other,1140,Victoria
+2011-12,other,1120,Victoria
+2012-13,other,1360,Victoria
+2013-14,other,1500,Victoria
+2014-15,other,1570,Victoria
+2015-16,other,1850,Victoria
+2016-17,other,1900,Victoria
+2017-18,other,1790,Victoria
+2018-19,other,2300,Victoria
+2019-20,other,3100,Victoria
+2020-21,other,1300,Victoria
+2021-22,other,3060,Victoria
+2022-23(f),other,3620,Victoria
+2016-17,other,1900,Victoria
+2017-18,other,1790,Victoria
+2018-19,other,2300,Victoria
+2019-20,other,3100,Victoria
+2020-21,other,1300,Victoria
+2021-22,other,3060,Victoria
+2022-23(f),other,3620,Victoria
+2004-05,other,610,Queensland
+2005-06,other,630,Queensland
+2006-07,other,590,Queensland
+2007-08,other,630,Queensland
+2008-09,other,660,Queensland
+2009-10,other,680,Queensland
+2010-11,other,670,Queensland
+2011-12,other,590,Queensland
+2012-13,other,760,Queensland
+2013-14,other,730,Queensland
+2014-15,other,840,Queensland
+2015-16,other,920,Queensland
+2016-17,other,940,Queensland
+2017-18,other,900,Queensland
+2018-19,other,1080,Queensland
+2019-20,other,1250,Queensland
+2020-21,other,680,Queensland
+2021-22,other,1160,Queensland
+2022-23(f),other,1340,Queensland
+2016-17,other,940,Queensland
+2017-18,other,900,Queensland
+2018-19,other,1080,Queensland
+2019-20,other,1250,Queensland
+2020-21,other,680,Queensland
+2021-22,other,1160,Queensland
+2022-23(f),other,1340,Queensland
+2004-05,other,140,South Australia
+2005-06,other,130,South Australia
+2006-07,other,170,South Australia
+2007-08,other,150,South Australia
+2008-09,other,170,South Australia
+2009-10,other,140,South Australia
+2010-11,other,160,South Australia
+2011-12,other,170,South Australia
+2012-13,other,210,South Australia
+2013-14,other,190,South Australia
+2014-15,other,200,South Australia
+2015-16,other,220,South Australia
+2016-17,other,230,South Australia
+2017-18,other,200,South Australia
+2018-19,other,280,South Australia
+2019-20,other,400,South Australia
+2020-21,other,210,South Australia
+2021-22,other,340,South Australia
+2022-23(f),other,370,South Australia
+2004-05,other,590,Western Australia
+2005-06,other,600,Western Australia
+2006-07,other,600,Western Australia
+2007-08,other,640,Western Australia
+2008-09,other,610,Western Australia
+2009-10,other,580,Western Australia
+2010-11,other,680,Western Australia
+2011-12,other,670,Western Australia
+2012-13,other,710,Western Australia
+2013-14,other,710,Western Australia
+2014-15,other,750,Western Australia
+2015-16,other,740,Western Australia
+2016-17,other,760,Western Australia
+2017-18,other,890,Western Australia
+2018-19,other,1030,Western Australia
+2019-20,other,1600,Western Australia
+2020-21,other,690,Western Australia
+2021-22,other,970,Western Australia
+2022-23(f),other,1120,Western Australia
+2004-05,other,20,Tasmania
+2005-06,other,20,Tasmania
+2006-07,other,40,Tasmania
+2007-08,other,30,Tasmania
+2008-09,other,40,Tasmania
+2009-10,other,40,Tasmania
+2010-11,other,40,Tasmania
+2011-12,other,30,Tasmania
+2012-13,other,30,Tasmania
+2013-14,other,30,Tasmania
+2014-15,other,40,Tasmania
+2015-16,other,30,Tasmania
+2016-17,other,30,Tasmania
+2017-18,other,50,Tasmania
+2018-19,other,40,Tasmania
+2019-20,other,60,Tasmania
+2020-21,other,20,Tasmania
+2021-22,other,40,Tasmania
+2022-23(f),other,60,Tasmania
+2004-05,other,20,Northern Territory
+2005-06,other,10,Northern Territory
+2006-07,other,20,Northern Territory
+2007-08,other,20,Northern Territory
+2008-09,other,30,Northern Territory
+2009-10,other,20,Northern Territory
+2010-11,other,30,Northern Territory
+2011-12,other,20,Northern Territory
+2012-13,other,30,Northern Territory
+2013-14,other,30,Northern Territory
+2014-15,other,30,Northern Territory
+2015-16,other,40,Northern Territory
+2016-17,other,50,Northern Territory
+2017-18,other,30,Northern Territory
+2018-19,other,30,Northern Territory
+2019-20,other,30,Northern Territory
+2020-21,other,30,Northern Territory
+2021-22,other,80,Northern Territory
+2022-23(f),other,40,Northern Territory
+2004-05,other,50,Australian Capital Territory
+2005-06,other,60,Australian Capital Territory
+2006-07,other,50,Australian Capital Territory
+2007-08,other,40,Australian Capital Territory
+2008-09,other,40,Australian Capital Territory
+2009-10,other,40,Australian Capital Territory
+2010-11,other,60,Australian Capital Territory
+2011-12,other,60,Australian Capital Territory
+2012-13,other,70,Australian Capital Territory
+2013-14,other,80,Australian Capital Territory
+2014-15,other,70,Australian Capital Territory
+2015-16,other,80,Australian Capital Territory
+2016-17,other,80,Australian Capital Territory
+2017-18,other,80,Australian Capital Territory
+2018-19,other,100,Australian Capital Territory
+2019-20,other,120,Australian Capital Territory
+2020-21,other,120,Australian Capital Territory
+2021-22,other,110,Australian Capital Territory
+2022-23(f),other,120,Australian Capital Territory
+2004-05,other,3650,Australia
+2005-06,other,3640,Australia
+2006-07,other,3770,Australia
+2007-08,other,3940,Australia
+2008-09,other,4000,Australia
+2009-10,other,3990,Australia
+2010-11,other,4320,Australia
+2011-12,other,4250,Australia
+2012-13,other,4960,Australia
+2013-14,other,5340,Australia
+2014-15,other,5510,Australia
+2015-16,other,6070,Australia
+2016-17,other,6270,Australia
+2017-18,other,6130,Australia
+2018-19,other,7530,Australia
+2019-20,other,10320,Australia
+2020-21,other,6090,Australia
+2021-22,other,9320,Australia
+2022-23(g),other,10790,Australia
+2004-05,total,29830,New South Wales
+2005-06,total,31440,New South Wales
+2006-07,total,31990,New South Wales
+2007-08,total,31760,New South Wales
+2008-09,total,32510,New South Wales
+2009-10,total,28670,New South Wales
+2010-11,total,26510,New South Wales
+2011-12,total,26180,New South Wales
+2012-13,total,26850,New South Wales
+2013-14,total,30750,New South Wales
+2014-15,total,30850,New South Wales
+2015-16,total,30340,New South Wales
+2016-17,total,40250,New South Wales
+2017-18,total,31680,New South Wales
+2018-19,total,30750,New South Wales
+2019-20,total,25670,New South Wales
+2020-21,total,18040,New South Wales
+2021-22,total,25110,New South Wales
+2022-23(f),total,25420,New South Wales
+2004-05,total,22000,Victoria
+2005-06,total,23540,Victoria
+2006-07,total,25910,Victoria
+2007-08,total,27160,Victoria
+2008-09,total,27450,Victoria
+2009-10,total,25290,Victoria
+2010-11,total,23080,Victoria
+2011-12,total,24150,Victoria
+2012-13,total,24890,Victoria
+2013-14,total,26930,Victoria
+2014-15,total,27660,Victoria
+2015-16,total,28150,Victoria
+2016-17,total,33640,Victoria
+2017-18,total,28270,Victoria
+2018-19,total,27030,Victoria
+2019-20,total,21780,Victoria
+2020-21,total,9000,Victoria
+2021-22,total,23110,Victoria
+2022-23(f),total,25510,Victoria
+2016-17,total,33640,Victoria
+2017-18,total,28270,Victoria
+2018-19,total,27030,Victoria
+2019-20,total,21780,Victoria
+2020-21,total,9000,Victoria
+2021-22,total,23110,Victoria
+2022-23(f),total,25510,Victoria
+2004-05,total,10910,Queensland
+2005-06,total,12080,Queensland
+2006-07,total,13420,Queensland
+2007-08,total,13950,Queensland
+2008-09,total,13810,Queensland
+2009-10,total,12000,Queensland
+2010-11,total,10710,Queensland
+2011-12,total,11640,Queensland
+2012-13,total,10540,Queensland
+2013-14,total,11490,Queensland
+2014-15,total,10890,Queensland
+2015-16,total,11310,Queensland
+2016-17,total,12270,Queensland
+2017-18,total,10460,Queensland
+2018-19,total,10790,Queensland
+2019-20,total,8870,Queensland
+2020-21,total,4090,Queensland
+2021-22,total,8710,Queensland
+2022-23(f),total,10190,Queensland
+2016-17,total,12270,Queensland
+2017-18,total,10460,Queensland
+2018-19,total,10790,Queensland
+2019-20,total,8870,Queensland
+2020-21,total,4090,Queensland
+2021-22,total,8710,Queensland
+2022-23(f),total,10190,Queensland
+2004-05,total,5130,South Australia
+2005-06,total,7120,South Australia
+2006-07,total,8190,South Australia
+2007-08,total,7870,South Australia
+2008-09,total,7590,South Australia
+2009-10,total,9010,South Australia
+2010-11,total,6230,South Australia
+2011-12,total,7900,South Australia
+2012-13,total,7030,South Australia
+2013-14,total,7270,South Australia
+2014-15,total,7180,South Australia
+2015-16,total,6930,South Australia
+2016-17,total,7120,South Australia
+2017-18,total,6720,South Australia
+2018-19,total,6760,South Australia
+2019-20,total,5930,South Australia
+2020-21,total,1860,South Australia
+2021-22,total,5170,South Australia
+2022-23(f),total,6830,South Australia
+2004-05,total,11260,Western Australia
+2005-06,total,12720,Western Australia
+2006-07,total,14380,Western Australia
+2007-08,total,14860,Western Australia
+2008-09,total,14620,Western Australia
+2009-10,total,12620,Western Australia
+2010-11,total,11310,Western Australia
+2011-12,total,14500,Western Australia
+2012-13,total,14570,Western Australia
+2013-14,total,14070,Western Australia
+2014-15,total,11520,Western Australia
+2015-16,total,10720,Western Australia
+2016-17,total,9310,Western Australia
+2017-18,total,7520,Western Australia
+2018-19,total,6590,Western Australia
+2019-20,total,6000,Western Australia
+2020-21,total,2910,Western Australia
+2021-22,total,5950,Western Australia
+2022-23(f),total,7990,Western Australia
+2004-05,total,690,Tasmania
+2005-06,total,670,Tasmania
+2006-07,total,740,Tasmania
+2007-08,total,760,Tasmania
+2008-09,total,930,Tasmania
+2009-10,total,980,Tasmania
+2010-11,total,740,Tasmania
+2011-12,total,830,Tasmania
+2012-13,total,810,Tasmania
+2013-14,total,1150,Tasmania
+2014-15,total,670,Tasmania
+2015-16,total,720,Tasmania
+2016-17,total,1070,Tasmania
+2017-18,total,1050,Tasmania
+2018-19,total,1300,Tasmania
+2019-20,total,1060,Tasmania
+2020-21,total,260,Tasmania
+2021-22,total,1000,Tasmania
+2022-23(f),total,1240,Tasmania
+2004-05,total,440,Northern Territory
+2005-06,total,490,Northern Territory
+2006-07,total,600,Northern Territory
+2007-08,total,550,Northern Territory
+2008-09,total,670,Northern Territory
+2009-10,total,750,Northern Territory
+2010-11,total,610,Northern Territory
+2011-12,total,800,Northern Territory
+2012-13,total,730,Northern Territory
+2013-14,total,960,Northern Territory
+2014-15,total,920,Northern Territory
+2015-16,total,1000,Northern Territory
+2016-17,total,1020,Northern Territory
+2017-18,total,830,Northern Territory
+2018-19,total,900,Northern Territory
+2019-20,total,550,Northern Territory
+2020-21,total,200,Northern Territory
+2021-22,total,860,Northern Territory
+2022-23(f),total,950,Northern Territory
+2004-05,total,960,Australian Capital Territory
+2005-06,total,1050,Australian Capital Territory
+2006-07,total,960,Australian Capital Territory
+2007-08,total,1200,Australian Capital Territory
+2008-09,total,1450,Australian Capital Territory
+2009-10,total,1330,Australian Capital Territory
+2010-11,total,1100,Australian Capital Territory
+2011-12,total,1700,Australian Capital Territory
+2012-13,total,1340,Australian Capital Territory
+2013-14,total,1730,Australian Capital Territory
+2014-15,total,1810,Australian Capital Territory
+2015-16,total,1420,Australian Capital Territory
+2016-17,total,1520,Australian Capital Territory
+2017-18,total,1390,Australian Capital Territory
+2018-19,total,1270,Australian Capital Territory
+2019-20,total,1020,Australian Capital Territory
+2020-21,total,590,Australian Capital Territory
+2021-22,total,1180,Australian Capital Territory
+2022-23(f),total,1530,Australian Capital Territory
+2004-05,total,81210,Australia
+2005-06,total,89110,Australia
+2006-07,total,96190,Australia
+2007-08,total,98110,Australia
+2008-09,total,99040,Australia
+2009-10,total,90640,Australia
+2010-11,total,80300,Australia
+2011-12,total,87690,Australia
+2012-13,total,86760,Australia
+2013-14,total,94350,Australia
+2014-15,total,91490,Australia
+2015-16,total,90590,Australia
+2016-17,total,106200,Australia
+2017-18,total,87910,Australia
+2018-19,total,85390,Australia
+2019-20,total,70890,Australia
+2020-21,total,36950,Australia
+2021-22,total,71100,Australia
+2022-23(g),total,79670,Australia

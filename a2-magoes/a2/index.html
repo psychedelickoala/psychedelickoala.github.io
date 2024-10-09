@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patterns of migration in Australia</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    
+    <link rel="stylesheet" href="styles.css" media="all">
+</head>
+
+<body>
+
+   <p id="title"> Patterns of migration in Australia </p>
+
+    <div id="line_graph"></div>
+
+   <script type="text/javascript">
+        var spec = "line_graph.vg.json";
+        vegaEmbed("#line_graph", spec).then(function(results) {}).catch(console.error);
+   </script>
+
+   <div id="choropleth_map"></div>
+   
+   <!-- <script type="text/javascript">
+        var spec2 = "choropleth_map.vg.json";
+        vegaEmbed("#choropleth_map", spec2).then(function(results) {}).catch(console.error);
+   </script> -->
+
+   <div id="migration_map"></div>
+
+   <script type="text/javascript">
+         var spec3 = "migration_map.vg.json";
+         vegaEmbed("#migration_map", spec3).then(function(results) {}).catch(console.error);
+   </script>
+
+</body>
+
+</html>

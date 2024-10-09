@@ -1,0 +1,101 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "New overseas migration into each state over time",
+    "width": 800,
+    "height": 400,
+    "data": {
+        "url": "overseas_migration.csv"
+    },
+    "params": [
+        {
+            "name": "state_selection",
+            "value": "Australia",
+            "bind": {
+                "input": "select",
+                "name": "State",
+                "options": ["Australia", "Victoria", "New South Wales", "Western Australia", "South Australia", "Northern Territory", "Queensland", "Australian Capital Territory", "Tasmania"]
+            }
+        }
+    ],
+    "transform": [
+        {
+            "filter": "!state_selection || datum.state == state_selection"
+        }
+    ],
+    "layer": [
+        {
+            "mark": {
+                "type": "rect",
+                "color": "lightblue"
+            },
+            "encoding": {
+                "x": {"value": 650},
+                "x2": {"value": 745},
+                "y": {"value": 0}
+            }
+        },
+        {
+            "mark": {
+                "type": "text",
+                "color": "black"
+            },
+            "encoding": {
+                "text": {
+                    "value": "COVID-19 affected"
+                },
+                "x": {"value": 697},
+                "y": {"value": 10}
+            }
+        },
+        {
+            "mark": {
+                "type": "line",
+                "strokeWidth": 2 
+            },
+            "encoding": {
+            "x": {
+                    "field": "year",
+                    "type": "ordinal",
+                    "title": ""
+                },
+                "y": {
+                    "field": "net_overseas_migration",
+                    "type": "quantitative",
+                    "title": "Total"
+                }
+            }
+        },
+        {
+            "mark": {
+                "type": "point",
+                "size": 25,
+                "color": "green"
+            },
+            "encoding": {
+                "x": {
+                    "field": "year",
+                    "type": "ordinal",
+                    "title": ""
+                },
+                "y": {
+                    "field": "net_overseas_migration",
+                    "type": "quantitative",
+                    "title": "Total"
+                },
+                "tooltip": [
+                    {
+                        "field": "year",
+                        "type": "ordinal",
+                        "title": "Year"
+                    },
+                    {
+                        "field": "net_overseas_migration",
+                        "type": "quantitative",
+                        "title": "Net overseas migration",
+                        "format": ","
+                    }
+                ]
+            }
+        }
+    ]
+}

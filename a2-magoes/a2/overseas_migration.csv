@@ -1,0 +1,191 @@
+﻿year,net_overseas_migration,state
+2004-05,47440,New South Wales
+2005-06,53610,New South Wales
+2006-07,73570,New South Wales
+2007-08,87390,New South Wales
+2008-09,86740,New South Wales
+2009-10,57150,New South Wales
+2010-11,51680,New South Wales
+2011-12,57230,New South Wales
+2012-13,66760,New South Wales
+2013-14,66990,New South Wales
+2014-15,70310,New South Wales
+2015-16,80010,New South Wales
+2016-17,105500,New South Wales
+2017-18,90650,New South Wales
+2018-19,84540,New South Wales
+2019-20,57890,New South Wales
+2020-21,-7330,New South Wales
+2021-22,69110,New South Wales
+2022-23,174200,New South Wales
+2004-05,37620,Victoria
+2005-06,44980,Victoria
+2006-07,62540,Victoria
+2007-08,73560,Victoria
+2008-09,83620,Victoria
+2009-10,53680,Victoria
+2010-11,44630,Victoria
+2011-12,56170,Victoria
+2012-13,59030,Victoria
+2013-14,56910,Victoria
+2014-15,60690,Victoria
+2015-16,72220,Victoria
+2016-17,91240,Victoria
+2017-18,86970,Victoria
+2018-19,85480,Victoria
+2019-20,60570,Victoria
+2020-21,-52990,Victoria
+2021-22,66050,Victoria
+2022-23,154260,Victoria
+2004-05,26710,Queensland
+2005-06,32730,Queensland
+2006-07,46150,Queensland
+2007-08,53910,Queensland
+2008-09,59320,Queensland
+2009-10,35820,Queensland
+2010-11,34630,Queensland
+2011-12,46540,Queensland
+2012-13,41830,Queensland
+2013-14,27220,Queensland
+2014-15,20430,Queensland
+2015-16,24950,Queensland
+2016-17,34080,Queensland
+2017-18,27740,Queensland
+2018-19,31750,Queensland
+2019-20,27970,Queensland
+2020-21,-12860,Queensland
+2021-22,29620,Queensland
+2022-23,83990,Queensland
+2004-05,8550,South Australia
+2005-06,11870,South Australia
+2006-07,14630,South Australia
+2007-08,15330,South Australia
+2008-09,18010,South Australia
+2009-10,14540,South Australia
+2010-11,9170,South Australia
+2011-12,12360,South Australia
+2012-13,11680,South Australia
+2013-14,11640,South Australia
+2014-15,11150,South Australia
+2015-16,11280,South Australia
+2016-17,12180,South Australia
+2017-18,12720,South Australia
+2018-19,15140,South Australia
+2019-20,14930,South Australia
+2020-21,-2830,South Australia
+2021-22,14320,South Australia
+2022-23,27860,South Australia
+2004-05,19190,Western Australia
+2005-06,25510,Western Australia
+2006-07,31380,Western Australia
+2007-08,41180,Western Australia
+2008-09,44330,Western Australia
+2009-10,28870,Western Australia
+2010-11,36430,Western Australia
+2011-12,50780,Western Australia
+2012-13,42140,Western Australia
+2013-14,18750,Western Australia
+2014-15,14070,Western Australia
+2015-16,11620,Western Australia
+2016-17,12010,Western Australia
+2017-18,11980,Western Australia
+2018-19,17480,Western Australia
+2019-20,25170,Western Australia
+2020-21,-5070,Western Australia
+2021-22,15340,Western Australia
+2022-23,61590,Western Australia
+2004-05,1240,Tasmania
+2005-06,1350,Tasmania
+2006-07,1440,Tasmania
+2007-08,1840,Tasmania
+2008-09,2130,Tasmania
+2009-10,1680,Tasmania
+2010-11,990,Tasmania
+2011-12,1520,Tasmania
+2012-13,1620,Tasmania
+2013-14,1800,Tasmania
+2014-15,1520,Tasmania
+2015-16,1770,Tasmania
+2016-17,2340,Tasmania
+2017-18,2800,Tasmania
+2018-19,3190,Tasmania
+2019-20,3640,Tasmania
+2020-21,-320,Tasmania
+2021-22,3350,Tasmania
+2022-23,4030,Tasmania
+2004-05,1010,Canberra
+2005-06,640,Canberra
+2006-07,1150,Canberra
+2007-08,1620,Canberra
+2008-09,2100,Canberra
+2009-10,1230,Canberra
+2010-11,1100,Canberra
+2011-12,3330,Canberra
+2012-13,4350,Canberra
+2013-14,1750,Canberra
+2014-15,2350,Canberra
+2015-16,1050,Canberra
+2016-17,1850,Canberra
+2017-18,760,Canberra
+2018-19,930,Canberra
+2019-20,290,Canberra
+2020-21,-420,Canberra
+2021-22,2340,Canberra
+2022-23,3330,Canberra
+2004-05,820,Australian Capital Territory
+2005-06,1160,Australian Capital Territory
+2006-07,1940,Australian Capital Territory
+2007-08,2520,Australian Capital Territory
+2008-09,3610,Australian Capital Territory
+2009-10,3090,Australian Capital Territory
+2010-11,1740,Australian Capital Territory
+2011-12,4020,Australian Capital Territory
+2012-13,2920,Australian Capital Territory
+2013-14,2720,Australian Capital Territory
+2014-15,3500,Australian Capital Territory
+2015-16,3330,Australian Capital Territory
+2016-17,4150,Australian Capital Territory
+2017-18,4600,Australian Capital Territory
+2018-19,2810,Australian Capital Territory
+2019-20,2240,Australian Capital Territory
+2020-21,-3150,Australian Capital Territory
+2021-22,3390,Australian Capital Territory
+2022-23,8790,Australian Capital Territory
+2004-05,1010,Northern Territory
+2005-06,640,Northern Territory
+2006-07,1150,Northern Territory
+2007-08,1620,Northern Territory
+2008-09,2100,Northern Territory
+2009-10,1230,Northern Territory
+2010-11,1100,Northern Territory
+2011-12,3330,Northern Territory
+2012-13,4350,Northern Territory
+2013-14,1750,Northern Territory
+2014-15,2350,Northern Territory
+2015-16,1050,Northern Territory
+2016-17,1850,Northern Territory
+2017-18,760,Northern Territory
+2018-19,930,Northern Territory
+2019-20,290,Northern Territory
+2020-21,-420,Northern Territory
+2021-22,2340,Northern Territory
+2022-23,3330,Northern Territory
+2004-05,142580,Australia
+2005-06,171850,Australia
+2006-07,232800,Australia
+2007-08,277350,Australia
+2008-09,299860,Australia
+2009-10,196060,Australia
+2010-11,180370,Australia
+2011-12,231950,Australia
+2012-13,230330,Australia
+2013-14,187780,Australia
+2014-15,184020,Australia
+2015-16,206230,Australia
+2016-17,263350,Australia
+2017-18,238220,Australia
+2018-19,241320,Australia
+2019-20,192700,Australia
+2020-21,-84970,Australia
+2021-22,203520,Australia
+2022-23,518050,Australia
