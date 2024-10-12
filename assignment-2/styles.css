@@ -7,9 +7,17 @@
 	margin: 30px; 
 	background-color: brown;
 }
+.pure-u-1-3{
+	text-align: center;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	align-self: center;
+}
 
 .pure-u-2-3{
 	text-align: center;
+
 }
 
 .my-heading{
@@ -36,4 +44,16 @@
 	padding-right: 10px;
 	text-align: justify;
 	font-size: 18px;
+	line-height: 150%;
+}
+
+.sources-text{
+	color: white;
+	font-family:Libre Baskerville;
+	margin: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+	font-size: 12px;
+	line-height: 100%;
 }

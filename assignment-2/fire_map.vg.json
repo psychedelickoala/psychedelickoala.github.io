@@ -22,6 +22,17 @@
                 "max": 2090,
                 "step": 20
             }
+        },
+        {
+            "name": "rcpselection",
+            "value": "rcp45",
+            "bind": {
+                "input": "select",
+                "name": "Model:   ",
+                "options": ["rcp45", "rcp85"],
+                "labels": ["RCP 4.5", "RCP 8.5"]
+    
+              }
         }
     ],
     "projection": {"type": "equirectangular"},
@@ -49,7 +60,7 @@
             },
             "transform": [
                 {"filter": "datum.Year == yearselection"},
-                {"filter": "datum.Experiment == 'rcp45' && datum.Model == 'CESM1-CAM5'"},
+                {"filter": "datum.Experiment == rcpselection && datum.Model == 'CESM1-CAM5'"},
                 {"fold": ["High", "Very High", "Severe", "Extreme"], "as": ["Severity", "DPY"]}
             ],
 
