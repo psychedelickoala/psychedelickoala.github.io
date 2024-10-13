@@ -82,10 +82,10 @@
         },
         "tooltip": [
             {
-                "field": "Mean_Min_Temp", "format": ".1f"
+                "field": "Mean_Min_Temp", "format": ".1f", "title": "Average daily minimum (°C)"
             },
             {
-                "field": "Mean_Max_Temp", "format": ".1f"
+                "field": "Mean_Max_Temp", "format": ".1f", "title": "Average daily maximum (°C)"
             },
             {"field": "Month"},
             {"field": "Year"}

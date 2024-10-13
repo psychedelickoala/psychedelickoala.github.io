@@ -189,7 +189,7 @@
             },
             "tooltip": [
                 {
-                    "field": "Total_Rainfall", "format": ".1f"
+                    "field": "Total_Rainfall", "format": ".1f", "title": "Total rainfall (mm)"
                 },
                 {"field": "Year"}
             ]
